@@ -1,0 +1,548 @@
+% ============================================================
+%  SAVI: Conditional Viterbi Integration
+%  Revised Technical Design Memo — Companion to the SAVI Draft
+% ============================================================
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage{times}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{mdframed}
+\usepackage{fancyhdr}
+\usepackage{xspace}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape SAVI: Conditional Viterbi Integration}
+\fancyhead[R]{\small\itshape Revised Technical Design Memo}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+
+% ── Theorem environments ─────────────────────────────────────────────────────
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+
+% ── Math macros ──────────────────────────────────────────────────────────────
+\newcommand{\Phifn}{\Phi}
+\newcommand{\Pfwd}{P_{\mathrm{fwd}}}
+\newcommand{\Pbwd}{P_{\mathrm{bwd}}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\SAVI}{\textsc{savi}\xspace}
+\newcommand{\eps}{\varepsilon}
+
+% ── Callout box ──────────────────────────────────────────────────────────────
+\newmdenv[
+  linecolor=black,
+  linewidth=0.8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  skipabove=8pt,
+  skipbelow=8pt
+]{callout}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\title{\textbf{Integrating Viterbi Dynamic Programming into \SAVI}\\
+       \large Canonical Prompting, Backpointers, and Conditional Trellis Inference\\[6pt]
+       \normalsize Revised Technical Design Memo --- Companion to the SAVI Draft}
+\author{}
+\date{}
+
+% =============================================================================
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+The current \SAVI draft correctly frames semantic-state search as Viterbi-inspired, because ordinary
+LLM prompting conditions on the full text history and therefore violates the Markov property required
+by classical Viterbi inference.
+This memo integrates the useful parts of the Viterbi upgrade while avoiding an overclaim.
+The central change is \emph{canonical prompting}: after merging histories that reach the same semantic
+state, the next LLM query is reconstructed from a deterministic representation of that state rather than
+from an arbitrary preserved text history.
+Under this induced process, \SAVI can be implemented as a conditional Viterbi dynamic program over
+a beam-limited semantic-state trellis, with explicit backpointers and path recovery.
+The result is not unqualified exact Viterbi over the original LLM text process.
+It is exact only under stated conditions: sound semantic mapping, complete candidate support or
+accepted candidate truncation, no beam-pruning error, sufficient state expressiveness, and a calibrated
+learned value function for the bidirectional extension.
+The revised positioning is therefore stronger and safer:
+\SAVI is Viterbi-inspired in its general form;
+\emph{Canonical} \SAVI implements conditional Viterbi DP over the induced semantic-state trellis.
+\end{abstract}
+
+\begin{callout}
+\textbf{Executive summary.}
+Do not replace every occurrence of ``Viterbi-inspired'' with ``exact Viterbi.''
+Instead, introduce \textbf{Canonical \SAVI} as the principled variant.
+Canonical prompting makes the engineered inference process Markovian;
+DP backpointers make path recovery clean;
+and the correctness theorem should be conditional, not absolute.
+\end{callout}
+
+\tableofcontents
+\newpage
+
+% ── 1  What Should Change ────────────────────────────────────────────────────
+\section{What Should Change in the SAVI Paper}
+
+\subsection{The Safe Claim}
+
+The upgraded claim should be:
+
+\begin{quote}
+\itshape
+\SAVI is Viterbi-inspired in its general form.
+Under canonical prompting, it becomes a conditional Viterbi dynamic program over an induced
+semantic-state trellis, exact up to candidate truncation, beam pruning, semantic-map soundness,
+state-representation expressiveness, and learned value approximation.
+\end{quote}
+
+This is strong enough to improve the theory and safe enough to survive review.
+
+\subsection{Three Variants to Define}
+
+The paper should explicitly distinguish three variants.
+
+\vspace{4pt}
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+\textbf{Variant} & \textbf{Prompt source} & \textbf{Claim} \\
+\midrule
+History \SAVI
+  & Preserved representative text history.
+  & Practical version. Viterbi-inspired, but Markov approximation may be nonzero. \\
+\addlinespace
+Canonical \SAVI
+  & Deterministic prompt built from the canonical semantic state.
+  & Conditional Viterbi DP over the induced semantic-state process. \\
+\addlinespace
+Bidirectional Canonical \SAVI
+  & Canonical state prompt plus learned goal-conditioned value.
+  & Forward Viterbi DP plus a learned approximation to the backward variable. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\vspace{4pt}
+
+This resolves the main risk in the earlier memo: it preserves the Viterbi upgrade without claiming that
+the original history-conditioned LLM process is exactly Markovian.
+
+% ── 2  Why Base SAVI Is Viterbi-Inspired ────────────────────────────────────
+\section{Why the Original \SAVI Is Only Viterbi-Inspired}
+
+Classical Viterbi inference requires a state abstraction that is sufficient for future transitions.
+More concretely, it requires:
+
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{A state space.} There must be states $S_t \in \calS$.
+  \item \textbf{A transition process.} Future states must be induced by transitions from the current
+        state.
+  \item \textbf{A Markov property.} The distribution over future transitions must depend on the
+        current state, not on the full history.
+\end{enumerate}
+
+The original \SAVI draft already has the first two ingredients: the semantic map $\Phifn$ constructs
+states and candidate chunks induce transitions.
+The critical gap is the Markov property.
+LLMs condition on text histories.
+If two text histories $H_A$ and $H_B$ satisfy $\Phifn(H_A) = \Phifn(H_B)$, the LLM may still
+generate differently from them because the visible prompts differ.
+
+\begin{definition}[History-conditioned Markov error]
+For merged histories $H_A, H_B$ with $\Phifn(H_A) = \Phifn(H_B)$, define
+\[
+  \eps(H_A, H_B) = D\bigl[\Pfwd(\cdot \mid H_A) \;\|\; \Pfwd(\cdot \mid H_B)\bigr],
+\]
+where $D$ may be KL, JS divergence, or an empirical divergence over induced next semantic states.
+\end{definition}
+
+When $\eps$ is large, merging is lossy: the algorithm discards one history even though that history
+may have produced better future continuations.
+This is why the base method should remain described as Viterbi-inspired.
+
+% ── 3  Canonical Prompting ───────────────────────────────────────────────────
+\section{Canonical Prompting: The Key Integration}
+
+\begin{definition}[Canonical prompting]
+A prompting strategy is \emph{canonical} if the LLM input at step $t$ is a deterministic function of
+the current semantic state and the fixed problem statement:
+\[
+  \mathrm{prompt}_t = f(S_{t-1}, \calP),
+\]
+independent of the text history used to reach $S_{t-1}$.
+\end{definition}
+
+Under canonical prompting, two histories that merge into the same state produce the same next prompt.
+Thus, for the induced inference process,
+\[
+  \Pfwd(x_t \mid H_A) = \Pfwd(x_t \mid H_B)
+  \quad \text{whenever} \quad \Phifn(H_A) = \Phifn(H_B),
+\]
+provided both histories are replaced by the same canonical prompt.
+The Markov violation is not solved for the original text process; rather, the algorithm deliberately
+constructs a new state-conditioned process.
+
+\subsection{Canonical Prompt Templates}
+
+\begin{itemize}
+  \item \textbf{Symbolic algebra.}
+        The prompt contains the original problem, the current canonical SymPy expression or equation,
+        declared assumptions, and a fixed instruction to propose the next legal algebraic transformation.
+        Prior derivation text is omitted.
+  \item \textbf{Restricted code generation.}
+        The prompt contains the function signature, problem specification, bounded observational state,
+        visible output traces on fixed public inputs, and a fixed instruction to propose the next code
+        chunk.
+        Prior arbitrary prose is omitted or summarized into the canonical execution state.
+  \item \textbf{Theorem proving.}
+        The prompt contains the formal proof state, local hypotheses, goals, and allowed tactics.
+        Prior natural-language proof text is not used as state.
+\end{itemize}
+
+\begin{callout}
+\textbf{Tradeoff.}
+Canonical prompting removes path dependence, but it can lose useful context if the semantic state
+representation is too poor.
+This is not a theoretical footnote; it must be tested.
+The paper should add an experiment comparing canonical-state prompting against preserved-history
+prompting.
+\end{callout}
+
+% ── 4  Viterbi DP with Backpointers ─────────────────────────────────────────
+\section{Viterbi DP with Backpointers}
+
+\subsection{Forward Recurrence}
+
+Let $V_t(S)$ be the best accumulated log score of any path reaching canonical state $S$ at step $t$.
+With canonical prompting, define
+\[
+  V_0(S_0) = 0, \qquad V_0(S) = -\infty \text{ for } S \neq S_0.
+\]
+The recurrence is
+\begin{equation}
+  V_t(S') = \max_{\substack{S \in \mathcal{B}_{t-1} \\ x:\,\Phifn(S,x) = S'}}
+    \Bigl[V_{t-1}(S) + \log \Pfwd\bigl(x \mid f(S, \calP)\bigr)\Bigr].
+  \label{eq:viterbi-dp}
+\end{equation}
+
+The backpointer is
+\[
+  \pi_t(S') = \arg\max_{(S,x):\,\Phifn(S,x) = S'}
+    \Bigl[V_{t-1}(S) + \log \Pfwd\bigl(x \mid f(S, \calP)\bigr)\Bigr].
+\]
+
+\subsection{Bidirectional Extension}
+
+For Bidirectional Canonical \SAVI, add a learned state value:
+\begin{equation}
+  V_t^\lambda(S') = \max_{S,x:\,\Phifn(S,x) = S'}
+    \Bigl[V_{t-1}^\lambda(S) + \log \Pfwd(x \mid f(S,\calP))
+      + \lambda \log \Pbwd(G{=}1 \mid S', \calP)\Bigr].
+  \label{eq:bidir-dp}
+\end{equation}
+
+This is not the exact HMM backward variable unless $\Pbwd$ is perfectly calibrated to the induced
+transition process.
+The safe statement is that $\Pbwd$ is a learned approximation to a backward value.
+
+\begin{definition}[Backward-value approximation]
+$\Pbwd(G{=}1 \mid S_t, \calP)$ estimates the probability that state $S_t$ can reach a correct
+terminal solution under the induced decoding policy and task objective.
+It is a \emph{learned value function}, not a future-token predictor.
+\end{definition}
+
+\subsection{Algorithm}
+
+\begin{algorithm}[H]
+\caption{Canonical \SAVI as Conditional Viterbi DP}
+\label{alg:canonical-savi}
+\begin{algorithmic}[1]
+  \Require Problem $\calP$, semantic map $\Phifn$, LLM $\Pfwd$, optional value $\Pbwd$,
+           candidates $N$, beam width $K$, steps $T$, weight $\lambda$
+  \State Initialize $V_0(S_0) \leftarrow 0$, $\mathcal{B}_0 \leftarrow \{S_0\}$
+  \For{$t = 1, \ldots, T$}
+    \State $\mathcal{C} \leftarrow \emptyset$
+    \For{each $S \in \mathcal{B}_{t-1}$}
+      \State $p \leftarrow f(S, \calP)$  \Comment{canonical prompt}
+      \State Generate $N$ candidate chunks $x_1, \ldots, x_N \sim \Pfwd(\cdot \mid p)$
+      \For{each candidate $x_i$}
+        \State $S' \leftarrow \Phifn(S, x_i)$
+        \If{$S' \neq \bot$}
+          \State $s \leftarrow V_{t-1}(S) + \log \Pfwd(x_i \mid p)
+                   + \lambda \log \Pbwd(G{=}1 \mid S', \calP)$
+          \State Add $(S',\, s,\, S,\, x_i)$ to $\mathcal{C}$
+        \EndIf
+      \EndFor
+    \EndFor
+    \For{each unique state $S'$ in $\mathcal{C}$}
+      \State $V_t(S') \leftarrow \max\{s : (S', s, S, x) \in \mathcal{C}\}$
+      \State $\pi_t(S') \leftarrow \arg\max\{s : (S', s, S, x) \in \mathcal{C}\}$
+    \EndFor
+    \State $\mathcal{B}_t \leftarrow$ top-$K$ states by $V_t(\cdot)$
+  \EndFor
+  \State $S^* \leftarrow \arg\max_{S \in \mathcal{B}_T} V_T(S)$
+  \State \Return trajectory recovered by backtracking through $\pi_T, \ldots, \pi_1$
+\end{algorithmic}
+\end{algorithm}
+
+The key implementation changes are modest: prompt from canonical state, store backpointers, and
+recover the final trajectory by backtracking rather than by returning the last retained history.
+
+% ── 5  Conditional Correctness Theorem ──────────────────────────────────────
+\section{Conditional Correctness Theorem}
+
+\begin{theorem}[Conditional Viterbi correctness]
+\label{thm:conditional-correctness}
+Assume the following conditions for the induced canonical-prompting process:
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Canonical prompting:} all prompts are deterministic functions $f(S_t, \calP)$.
+  \item \textbf{Sound semantic map:} $\Phifn$ has no false merges over the evaluated domain.
+  \item \textbf{Complete candidate support:} the candidate generator enumerates every transition with
+        nonzero probability, or else the theorem is restricted to the sampled candidate set.
+  \item \textbf{No beam-pruning error:} the optimal path's state remains within the top-$K$ retained
+        states at every step.
+  \item \textbf{(Bidirectional \SAVI only)} $\Pbwd$ is a calibrated estimate of terminal success
+        probability under the induced process.
+\end{enumerate}
+Then Algorithm~\ref{alg:canonical-savi} with $\lambda = 0$ recovers the maximum-score path in the
+induced semantic-state trellis.
+With $\lambda > 0$, it recovers the maximum-score path under the augmented forward-plus-value
+objective in Equation~\eqref{eq:bidir-dp}.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Under canonical prompting, future candidate distributions depend only on the current canonical state.
+Under semantic-map soundness, merging preserves equivalence classes rather than collapsing distinct
+states.
+Equation~\eqref{eq:viterbi-dp} is therefore the standard Viterbi max recurrence over the induced
+trellis.
+Backpointers recover the maximizing path.
+Candidate truncation and beam pruning restrict the trellis on which the theorem applies; if the
+optimal path is pruned or never sampled, no beam method can recover it.
+The bidirectional case is exact only for the stated augmented objective and depends on the calibration
+quality of $\Pbwd$.
+\end{proof}
+
+\begin{remark}
+This theorem is intentionally conditional.
+That is a feature, not a weakness.
+Each condition corresponds to an empirical audit: false-merge rate, candidate budget, beam-width
+sensitivity, canonical-prompting validation, and value calibration.
+\end{remark}
+
+% ── 6  How to Modify the Paper Text ─────────────────────────────────────────
+\section{How to Modify the Paper Text}
+
+\subsection{Abstract and Contributions}
+
+Replace any unqualified claim of ``exact Viterbi'' with this language:
+
+\begin{quote}
+\itshape
+\SAVI is Viterbi-inspired in its general form.
+We further introduce Canonical \SAVI, which reconstructs the LLM prompt from the canonical
+semantic state after each merge.
+This induces a state-conditioned process on which \SAVI can be implemented as a conditional Viterbi
+dynamic program with explicit backpointers and path recovery.
+\end{quote}
+
+Add a contribution bullet:
+
+\begin{quote}
+\itshape
+We define Canonical \SAVI and prove a conditional correctness theorem showing that, under sound
+semantic mapping, sufficient candidate support, and no beam-pruning error, the algorithm recovers the
+maximum-score path in the induced semantic-state trellis.
+\end{quote}
+
+\subsection{Framework Section}
+
+Add a new subsection after the semantic map definitions:
+
+\begin{quote}
+\textbf{Canonical prompting.}
+The base form of \SAVI may continue from the representative text history associated with each retained
+state.
+This is practical but only approximately Markovian.
+Canonical \SAVI instead constructs the next prompt from the canonical state itself.
+This enforces the beam invariant not only at the state level but also at the prompting level:
+all paths that merge into the same state produce the same future prompt.
+\end{quote}
+
+Then replace the recurrence with Equation~\eqref{eq:viterbi-dp} and introduce the backpointer
+table $\pi_t$.
+
+\subsection{Theory Section}
+
+Do not delete the Markov approximation discussion.
+Split it:
+
+\begin{enumerate}
+  \item \textbf{History \SAVI:} Markov approximation error must be measured because prompts differ
+        across merged histories.
+  \item \textbf{Canonical \SAVI:} Markov error is removed by construction for the induced process,
+        but the burden shifts to state expressiveness and semantic-map soundness.
+\end{enumerate}
+
+This is better than claiming the Markov problem vanishes universally.
+
+\subsection{Bidirectional \SAVI Section}
+
+Replace ``$\Pbwd$ is the true backward variable'' with:
+
+\begin{quote}
+\itshape
+$\Pbwd$ is a learned approximation to the backward value: the probability that a canonical state can
+reach a correct terminal solution under the induced decoding process.
+If calibrated, it plays the role of the HMM backward variable; otherwise it should be treated as a
+value heuristic.
+\end{quote}
+
+% ── 7  Experiments to Add ───────────────────────────────────────────────────
+\section{Experiments to Add}
+
+The Viterbi integration needs experiments that specifically test whether the theory helps, not just
+whether the original semantic merging idea works.
+
+\vspace{4pt}
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+\textbf{Experiment} & \textbf{Comparison} & \textbf{Purpose} \\
+\midrule
+E6a Canonical prompt validation
+  & History \SAVI vs.\ Canonical \SAVI.
+  & Tests whether state-only prompting loses useful information.
+    Success: canonical accuracy within 2--3 percentage points, or better after
+    enriching the state representation. \\
+\addlinespace
+E6b Markov reduction
+  & Next-state distributions from two merged histories before and after canonical prompting.
+  & Shows that canonical prompting collapses history-dependent divergence in the induced process. \\
+\addlinespace
+E6c DP backtracking ablation
+  & Beam-with-merge vs.\ Viterbi DP with backpointers.
+  & Tests whether principled path recovery improves performance, especially on longer chains. \\
+\addlinespace
+E6d State expressiveness ablation
+  & Minimal state prompt vs.\ enriched state prompt.
+  & Identifies whether canonical prompting fails because the state representation omits
+    necessary context. \\
+\addlinespace
+E6e Value calibration
+  & Reliability curve and expected calibration error for $\Pbwd$.
+  & Determines whether Bidirectional \SAVI can legitimately be interpreted as using a
+    backward-value approximation. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+\vspace{4pt}
+
+These should be added to the experimental section after the existing aliasing and
+online-vs-post-hoc experiments.
+They do not replace BAR, CMR, RSD, false-merge audits, or iso-compute comparisons.
+
+% ── 8  Revised Nomenclature ─────────────────────────────────────────────────
+\section{Revised Nomenclature}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+\textbf{Avoid} & \textbf{Use instead} \\
+\midrule
+``\SAVI is exact Viterbi''
+  & ``Canonical \SAVI is conditional Viterbi DP over the induced semantic-state trellis.'' \\
+\addlinespace
+``Remove Viterbi-inspired everywhere''
+  & ``Base \SAVI is Viterbi-inspired; Canonical \SAVI is the Viterbi-DP variant.'' \\
+\addlinespace
+``$\Pbwd$ is the true backward variable''
+  & ``$\Pbwd$ is a learned approximation to the backward value, calibrated against terminal
+    success.'' \\
+\addlinespace
+``Markov error collapses to zero''
+  & ``Canonical prompting removes history dependence in the induced process; residual risk is
+    state expressiveness and $\Phifn$ soundness.'' \\
+\addlinespace
+``Viterbi optimality''
+  & ``Optimality within the sampled, beam-limited, soundly merged semantic trellis.'' \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+% ── 9  Risk Analysis ────────────────────────────────────────────────────────
+\section{Risk Analysis}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+\textbf{Risk} & \textbf{Problem} & \textbf{Mitigation} \\
+\midrule
+Canonical prompting loses context
+  & The semantic state may omit information contained in the original text history.
+  & Run E6a and E6d. Enrich the state prompt with assumptions, variable bindings, constraints,
+    and selected verified provenance if needed. \\
+\addlinespace
+False merges corrupt DP
+  & Viterbi DP assumes that merged paths are genuinely equivalent.
+  & Keep existing false-merge audit; report false-merge and missed-merge rates separately
+    for algebra and code. \\
+\addlinespace
+Candidate truncation weakens exactness
+  & Sampling only $N$ chunks per state means the full transition distribution is not enumerated.
+  & State that the theorem applies to the sampled trellis; sweep $N$ to measure sensitivity. \\
+\addlinespace
+Beam pruning drops optimal states
+  & Top-$K$ pruning can eliminate the globally best path.
+  & Sweep $K$ and report performance/coverage curves. \\
+\addlinespace
+$\Pbwd$ is uncalibrated
+  & An uncalibrated value model can harm Bidirectional \SAVI.
+  & Add E6e; report calibration and perform $\lambda$ sensitivity.
+    Keep Forward \SAVI as the main contribution. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+% ── 10  Recommended Integration Order ───────────────────────────────────────
+\section{Recommended Integration Order}
+
+\begin{enumerate}
+  \item Add Canonical \SAVI as a named variant, not as a replacement for all \SAVI.
+  \item Modify the algorithm to include canonical prompting, DP table updates, and backpointers.
+  \item Add the conditional correctness theorem with explicit assumptions.
+  \item Add the experiments E6a--E6e to validate canonical prompting and DP backtracking.
+  \item Soften the $\Pbwd$ language to ``learned approximation to the backward value.''
+  \item Keep Forward \SAVI as the main empirical contribution until $\Pbwd$ is validated.
+\end{enumerate}
+
+\begin{callout}
+\textbf{Final recommended sentence for the paper.}
+\SAVI converts text-space tree search into semantic-state trellis search.
+In its practical history-conditioned form it is Viterbi-inspired;
+in its canonical-prompting form it implements conditional Viterbi DP over the induced
+semantic-state trellis, with approximation sources made explicit and empirically measurable.
+\end{callout}
+
+\end{document}
