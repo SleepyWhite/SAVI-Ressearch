@@ -1,0 +1,101 @@
+{
+  "config": {
+    "vocab_size": 18782,
+    "L": 128,
+    "n_seqs": 200
+  },
+  "results": {
+    "D1_fwd_independent": {
+      "Word-AUC": 0.7780620894257256,
+      "Word-Recall@1": 0.075,
+      "Word-Recall@5": 0.265,
+      "n_words": 14357,
+      "n_err_words": 200,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D1_fwd_sameword": {
+      "Word-AUC": 0.8106004096913187,
+      "Word-Recall@1": 0.075,
+      "Word-Recall@5": 0.315,
+      "n_words": 14357,
+      "n_err_words": 200,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D2_tokflip_independent": {
+      "Word-AUC": 0.7826954863318499,
+      "Word-Recall@1": 0.13,
+      "Word-Recall@5": 0.29,
+      "n_words": 14357,
+      "n_err_words": 200,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D2_tokflip_sameword": {
+      "Word-AUC": 0.8042551388005934,
+      "Word-Recall@1": 0.1,
+      "Word-Recall@5": 0.38,
+      "n_words": 14357,
+      "n_err_words": 200,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D3_backrule_independent": {
+      "Word-AUC": 0.7356407474804031,
+      "Word-Recall@1": 0.075,
+      "Word-Recall@5": 0.185,
+      "n_words": 14488,
+      "n_err_words": 200,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D3_backrule_sameword": {
+      "Word-AUC": 0.787238241881299,
+      "Word-Recall@1": 0.1,
+      "Word-Recall@5": 0.26,
+      "n_words": 14488,
+      "n_err_words": 200,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D3ctrl_backrule_independent": {
+      "Word-AUC": 0.8782908734602464,
+      "Word-Recall@1": 0.51,
+      "Word-Recall@5": 0.585,
+      "n_words": 14488,
+      "n_err_words": 200,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D3ctrl_backrule_sameword": {
+      "Word-AUC": 0.9001749720044794,
+      "Word-Recall@1": 0.5,
+      "Word-Recall@5": 0.605,
+      "n_words": 14488,
+      "n_err_words": 200,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D4_cross_ensemble": {
+      "ensemble_Word-Recall@1": 0.515,
+      "ensemble_Word-Recall@5": 0.625,
+      "tokflip_Word-Recall@1": 0.105,
+      "tokflip_Word-Recall@5": 0.25,
+      "backrule_Word-Recall@1": 0.5,
+      "backrule_Word-Recall@5": 0.6,
+      "n_seqs": 200,
+      "n_skipped": 0
+    },
+    "D4ctrl_cross_ensemble": {
+      "ensemble_Word-Recall@1": 0.515,
+      "ensemble_Word-Recall@5": 0.58,
+      "tokflip_Word-Recall@1": 0.515,
+      "tokflip_Word-Recall@5": 0.605,
+      "backrule_Word-Recall@1": 0.05,
+      "backrule_Word-Recall@5": 0.135,
+      "n_seqs": 200,
+      "n_skipped": 0
+    }
+  }
+}

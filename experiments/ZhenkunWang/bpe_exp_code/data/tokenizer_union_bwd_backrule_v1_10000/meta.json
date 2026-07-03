@@ -1,0 +1,10 @@
+{
+  "version": "v1-union-10000",
+  "type": "union_backward_rules",
+  "direction": "backward (reversed text)",
+  "merge_priority": "backward_rules_first",
+  "n_vocab": 18782,
+  "n_merges": 9793,
+  "source_forward": "/data/harlantan/experiments/write_time_ownership/back_forward_detection_2/bpe/outputs/tokenizer_forward/tokenizer.json",
+  "source_backward": "/data/harlantan/experiments/write_time_ownership/back_forward_detection_2/bpe/outputs/tokenizer_bwd_rev/tokenizer.json"
+}

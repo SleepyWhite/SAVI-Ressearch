@@ -1,0 +1,159 @@
+{
+  "config": {
+    "vocab_size": 18782,
+    "L": 128,
+    "n_seqs": 200
+  },
+  "results": {
+    "A1_real_fwd": {
+      "plausible": {
+        "AUC": 0.6911120000000001,
+        "F0.5": 0.07537688442211056,
+        "Correction@1": 0.03,
+        "Correction@5": 0.11,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.075,
+        "Recall@5": 0.23,
+        "Recall@10": 0.315,
+        "Recall@20": 0.43,
+        "Recall@50": 0.675,
+        "Recall@100": 0.895
+      },
+      "random": {
+        "AUC": 0.7522264999999999,
+        "F0.5": 0.078125,
+        "Correction@1": 0.025,
+        "Correction@5": 0.07,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.06,
+        "Recall@5": 0.19,
+        "Recall@10": 0.3,
+        "Recall@20": 0.435,
+        "Recall@50": 0.775,
+        "Recall@100": 0.975
+      }
+    },
+    "A2_real_bwd_backrule": {
+      "plausible": {
+        "AUC": 0.6397092,
+        "F0.5": 0.09615384615384616,
+        "Correction@1": 0.03,
+        "Correction@5": 0.135,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.05,
+        "Recall@5": 0.155,
+        "Recall@10": 0.215,
+        "Recall@20": 0.325,
+        "Recall@50": 0.59,
+        "Recall@100": 0.92
+      },
+      "random": {
+        "AUC": 0.7001635,
+        "F0.5": 0.08928571428571429,
+        "Correction@1": 0.05,
+        "Correction@5": 0.155,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.035,
+        "Recall@5": 0.11,
+        "Recall@10": 0.21,
+        "Recall@20": 0.3,
+        "Recall@50": 0.665,
+        "Recall@100": 0.985
+      }
+    },
+    "A3_real_bwd_tokflip": {
+      "plausible": {
+        "AUC": 0.5493809,
+        "F0.5": 0.012552103069344449,
+        "Correction@1": 0.025,
+        "Correction@5": 0.065,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.0,
+        "Recall@5": 0.03,
+        "Recall@10": 0.08,
+        "Recall@20": 0.17,
+        "Recall@50": 0.46,
+        "Recall@100": 0.845
+      },
+      "random": {
+        "AUC": 0.5448975,
+        "F0.5": 0.012358504083679611,
+        "Correction@1": 0.015,
+        "Correction@5": 0.045,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.0,
+        "Recall@5": 0.02,
+        "Recall@10": 0.05,
+        "Recall@20": 0.155,
+        "Recall@50": 0.44,
+        "Recall@100": 0.85
+      }
+    },
+    "B1_gen_posthoc_fwd": {
+      "plausible": {
+        "AUC": 0.8918746,
+        "F0.5": 0.06699480448455017,
+        "Correction@1": 1.0,
+        "Correction@5": 1.0,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.0,
+        "Recall@5": 0.0,
+        "Recall@10": 0.24,
+        "Recall@20": 1.0,
+        "Recall@50": 1.0,
+        "Recall@100": 1.0
+      },
+      "random": {
+        "AUC": 0.9193600000000001,
+        "F0.5": 0.078125,
+        "Correction@1": 1.0,
+        "Correction@5": 1.0,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.0,
+        "Recall@5": 0.0,
+        "Recall@10": 0.585,
+        "Recall@20": 1.0,
+        "Recall@50": 1.0,
+        "Recall@100": 1.0
+      }
+    },
+    "B2_gen_posthoc_bwd": {
+      "plausible": {
+        "AUC": 0.892519,
+        "F0.5": 0.06488450558006749,
+        "Correction@1": 1.0,
+        "Correction@5": 1.0,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.0,
+        "Recall@5": 0.0,
+        "Recall@10": 0.125,
+        "Recall@20": 1.0,
+        "Recall@50": 1.0,
+        "Recall@100": 1.0
+      },
+      "random": {
+        "AUC": 0.9196,
+        "F0.5": 0.08643617021276596,
+        "Correction@1": 1.0,
+        "Correction@5": 1.0,
+        "n_pos": 25200,
+        "n_err": 200,
+        "Recall@1": 0.0,
+        "Recall@5": 0.0,
+        "Recall@10": 0.47,
+        "Recall@20": 1.0,
+        "Recall@50": 1.0,
+        "Recall@100": 1.0
+      }
+    }
+  }
+}

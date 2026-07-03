@@ -1,0 +1,3647 @@
+{
+  "config": {
+    "vocab_size": 18782,
+    "L": 128,
+    "n_seqs": 200,
+    "bin_size": 50,
+    "n_samples_per_bin": 10,
+    "max_rank": 4000
+  },
+  "freq_data": {
+    "A1": {
+      "bin_results": [
+        {
+          "freq_rank_start": 0,
+          "freq_rank_end": 49,
+          "avg_error_surprise": 8.052098081218078,
+          "std_error_surprise": 1.9278759307728217,
+          "sem_error_surprise": 0.13632141439357892,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 50,
+          "freq_rank_end": 99,
+          "avg_error_surprise": 9.326481544718147,
+          "std_error_surprise": 1.7194820672170945,
+          "sem_error_surprise": 0.12158574298578705,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 100,
+          "freq_rank_end": 149,
+          "avg_error_surprise": 9.619389827430247,
+          "std_error_surprise": 1.7469346361373213,
+          "sem_error_surprise": 0.12352693275023538,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 150,
+          "freq_rank_end": 199,
+          "avg_error_surprise": 9.969947607040405,
+          "std_error_surprise": 1.7197900297076276,
+          "sem_error_surprise": 0.12160751922232775,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 200,
+          "freq_rank_end": 249,
+          "avg_error_surprise": 10.290398117661477,
+          "std_error_surprise": 1.8514259560715995,
+          "sem_error_surprise": 0.1309155848403015,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 250,
+          "freq_rank_end": 299,
+          "avg_error_surprise": 10.503018209502102,
+          "std_error_surprise": 1.8103038033504428,
+          "sem_error_surprise": 0.12800780953568963,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 300,
+          "freq_rank_end": 349,
+          "avg_error_surprise": 11.1606947234869,
+          "std_error_surprise": 1.7088221560283414,
+          "sem_error_surprise": 0.12083197343694567,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 350,
+          "freq_rank_end": 399,
+          "avg_error_surprise": 10.949993575453759,
+          "std_error_surprise": 1.7344316059526335,
+          "sem_error_surprise": 0.1226428350073381,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 400,
+          "freq_rank_end": 449,
+          "avg_error_surprise": 11.055356461048127,
+          "std_error_surprise": 1.6713324582204103,
+          "sem_error_surprise": 0.11818105148248342,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 450,
+          "freq_rank_end": 499,
+          "avg_error_surprise": 11.618822360277177,
+          "std_error_surprise": 1.7275489416136907,
+          "sem_error_surprise": 0.12215615714466836,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 500,
+          "freq_rank_end": 549,
+          "avg_error_surprise": 11.499798540472984,
+          "std_error_surprise": 1.8365611850775747,
+          "sem_error_surprise": 0.1298644868032355,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 550,
+          "freq_rank_end": 599,
+          "avg_error_surprise": 11.330010643839834,
+          "std_error_surprise": 1.6847555877302216,
+          "sem_error_surprise": 0.1191302100725967,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 600,
+          "freq_rank_end": 649,
+          "avg_error_surprise": 11.612136363506318,
+          "std_error_surprise": 1.7606870026653645,
+          "sem_error_surprise": 0.12449937191316961,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 650,
+          "freq_rank_end": 699,
+          "avg_error_surprise": 11.217185692429544,
+          "std_error_surprise": 1.9540209882260282,
+          "sem_error_surprise": 0.13817014913554634,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 700,
+          "freq_rank_end": 749,
+          "avg_error_surprise": 11.693499731779097,
+          "std_error_surprise": 1.7924822085664414,
+          "sem_error_surprise": 0.126747632483357,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 750,
+          "freq_rank_end": 799,
+          "avg_error_surprise": 11.55697980618477,
+          "std_error_surprise": 1.73407775940641,
+          "sem_error_surprise": 0.1226178142781047,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 800,
+          "freq_rank_end": 849,
+          "avg_error_surprise": 11.557711834192277,
+          "std_error_surprise": 1.776851563867403,
+          "sem_error_surprise": 0.12564237899725625,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 850,
+          "freq_rank_end": 899,
+          "avg_error_surprise": 11.91321351647377,
+          "std_error_surprise": 1.7965909787958514,
+          "sem_error_surprise": 0.12703816641251234,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 900,
+          "freq_rank_end": 949,
+          "avg_error_surprise": 11.780135653853417,
+          "std_error_surprise": 1.741452385125546,
+          "sem_error_surprise": 0.12313927906357607,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 950,
+          "freq_rank_end": 999,
+          "avg_error_surprise": 11.899560151338576,
+          "std_error_surprise": 1.766808137311684,
+          "sem_error_surprise": 0.12493220149486645,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1000,
+          "freq_rank_end": 1049,
+          "avg_error_surprise": 12.177901302576066,
+          "std_error_surprise": 1.7144364493759763,
+          "sem_error_surprise": 0.12122896392671399,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1050,
+          "freq_rank_end": 1099,
+          "avg_error_surprise": 12.260887991189957,
+          "std_error_surprise": 1.7998064917420888,
+          "sem_error_surprise": 0.12726553751344008,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1100,
+          "freq_rank_end": 1149,
+          "avg_error_surprise": 11.991522305250168,
+          "std_error_surprise": 1.782699262913977,
+          "sem_error_surprise": 0.1260558737622733,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1150,
+          "freq_rank_end": 1199,
+          "avg_error_surprise": 12.227578647971152,
+          "std_error_surprise": 1.7256752780320532,
+          "sem_error_surprise": 0.12202366912224456,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1200,
+          "freq_rank_end": 1249,
+          "avg_error_surprise": 12.03738647198677,
+          "std_error_surprise": 1.8320324566405304,
+          "sem_error_surprise": 0.12954425734443686,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1250,
+          "freq_rank_end": 1299,
+          "avg_error_surprise": 12.187195601940157,
+          "std_error_surprise": 1.8274727259728403,
+          "sem_error_surprise": 0.12922183569688606,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1300,
+          "freq_rank_end": 1349,
+          "avg_error_surprise": 12.36843449497223,
+          "std_error_surprise": 1.719293290592692,
+          "sem_error_surprise": 0.12157239446266259,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1350,
+          "freq_rank_end": 1399,
+          "avg_error_surprise": 12.232771278858186,
+          "std_error_surprise": 1.8926008876307152,
+          "sem_error_surprise": 0.13382709217233577,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1400,
+          "freq_rank_end": 1449,
+          "avg_error_surprise": 12.356430811166765,
+          "std_error_surprise": 1.840954023706003,
+          "sem_error_surprise": 0.13017510740151747,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1450,
+          "freq_rank_end": 1499,
+          "avg_error_surprise": 12.320494099855424,
+          "std_error_surprise": 1.7321316363617216,
+          "sem_error_surprise": 0.12248020259791244,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1500,
+          "freq_rank_end": 1549,
+          "avg_error_surprise": 12.483973113954066,
+          "std_error_surprise": 1.7154084164059233,
+          "sem_error_surprise": 0.12129769237451052,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1550,
+          "freq_rank_end": 1599,
+          "avg_error_surprise": 12.32402397298813,
+          "std_error_surprise": 1.773052401779117,
+          "sem_error_surprise": 0.12537373766971086,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1600,
+          "freq_rank_end": 1649,
+          "avg_error_surprise": 12.484474565267563,
+          "std_error_surprise": 1.74238945680546,
+          "sem_error_surprise": 0.12320554003750858,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1650,
+          "freq_rank_end": 1699,
+          "avg_error_surprise": 12.5349650400877,
+          "std_error_surprise": 1.7250988314300058,
+          "sem_error_surprise": 0.12198290819211459,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1700,
+          "freq_rank_end": 1749,
+          "avg_error_surprise": 12.840692970514299,
+          "std_error_surprise": 1.652293705931595,
+          "sem_error_surprise": 0.1168348083976082,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1750,
+          "freq_rank_end": 1799,
+          "avg_error_surprise": 12.548977668285369,
+          "std_error_surprise": 1.728584488141972,
+          "sem_error_surprise": 0.12222938134190657,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1800,
+          "freq_rank_end": 1849,
+          "avg_error_surprise": 12.587564412951469,
+          "std_error_surprise": 1.7745013905395501,
+          "sem_error_surprise": 0.1254761966475474,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1850,
+          "freq_rank_end": 1899,
+          "avg_error_surprise": 12.748208612680436,
+          "std_error_surprise": 1.7935840659580977,
+          "sem_error_surprise": 0.12682554556671108,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1900,
+          "freq_rank_end": 1949,
+          "avg_error_surprise": 12.66005703830719,
+          "std_error_surprise": 1.8907663580192213,
+          "sem_error_surprise": 0.1336973713394783,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1950,
+          "freq_rank_end": 1999,
+          "avg_error_surprise": 12.569597925782205,
+          "std_error_surprise": 1.7847922837888208,
+          "sem_error_surprise": 0.12620387268765001,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2000,
+          "freq_rank_end": 2049,
+          "avg_error_surprise": 12.561259245634078,
+          "std_error_surprise": 1.8705814340997569,
+          "sem_error_surprise": 0.1322700816813595,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2050,
+          "freq_rank_end": 2099,
+          "avg_error_surprise": 12.606385658025742,
+          "std_error_surprise": 1.9927850577079682,
+          "sem_error_surprise": 0.14091118277525297,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2100,
+          "freq_rank_end": 2149,
+          "avg_error_surprise": 12.806181615889072,
+          "std_error_surprise": 1.7251698468535333,
+          "sem_error_surprise": 0.1219879297408691,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2150,
+          "freq_rank_end": 2199,
+          "avg_error_surprise": 12.756389962673188,
+          "std_error_surprise": 1.750923227080834,
+          "sem_error_surprise": 0.12380896872058908,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2200,
+          "freq_rank_end": 2249,
+          "avg_error_surprise": 12.62270775425434,
+          "std_error_surprise": 1.8206631653476406,
+          "sem_error_surprise": 0.1287403270473881,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2250,
+          "freq_rank_end": 2299,
+          "avg_error_surprise": 12.571477473258971,
+          "std_error_surprise": 1.684376581477216,
+          "sem_error_surprise": 0.11910341028343546,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2300,
+          "freq_rank_end": 2349,
+          "avg_error_surprise": 12.691023063182831,
+          "std_error_surprise": 1.7942943594517589,
+          "sem_error_surprise": 0.12687577090131114,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2350,
+          "freq_rank_end": 2399,
+          "avg_error_surprise": 12.655400305747985,
+          "std_error_surprise": 1.832744630456953,
+          "sem_error_surprise": 0.12959461563793445,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2400,
+          "freq_rank_end": 2449,
+          "avg_error_surprise": 12.843172061204912,
+          "std_error_surprise": 1.7869937813070595,
+          "sem_error_surprise": 0.12635954207004121,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2450,
+          "freq_rank_end": 2499,
+          "avg_error_surprise": 12.769399411439897,
+          "std_error_surprise": 1.8242916103573092,
+          "sem_error_surprise": 0.12899689685453802,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2500,
+          "freq_rank_end": 2549,
+          "avg_error_surprise": 12.799680171728134,
+          "std_error_surprise": 1.725162853772231,
+          "sem_error_surprise": 0.12198743525534808,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2550,
+          "freq_rank_end": 2599,
+          "avg_error_surprise": 12.897850821256636,
+          "std_error_surprise": 1.685191811291875,
+          "sem_error_surprise": 0.11916105573645254,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2600,
+          "freq_rank_end": 2649,
+          "avg_error_surprise": 12.88616915535927,
+          "std_error_surprise": 1.8508104499884057,
+          "sem_error_surprise": 0.1308720619877727,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2650,
+          "freq_rank_end": 2699,
+          "avg_error_surprise": 12.993567293763162,
+          "std_error_surprise": 1.725941700469978,
+          "sem_error_surprise": 0.12204250803349624,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2700,
+          "freq_rank_end": 2749,
+          "avg_error_surprise": 12.919413075685503,
+          "std_error_surprise": 1.8715513340943501,
+          "sem_error_surprise": 0.13233866396768448,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2750,
+          "freq_rank_end": 2799,
+          "avg_error_surprise": 13.234217819929121,
+          "std_error_surprise": 1.7541628905700795,
+          "sem_error_surprise": 0.12403804752278988,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2800,
+          "freq_rank_end": 2849,
+          "avg_error_surprise": 12.993090436935427,
+          "std_error_surprise": 1.9247857178697114,
+          "sem_error_surprise": 0.13610290334366898,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2850,
+          "freq_rank_end": 2899,
+          "avg_error_surprise": 13.085341599345206,
+          "std_error_surprise": 1.7962540387280612,
+          "sem_error_surprise": 0.12701434115183355,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2900,
+          "freq_rank_end": 2949,
+          "avg_error_surprise": 12.995256094694136,
+          "std_error_surprise": 1.8569373120263208,
+          "sem_error_surprise": 0.13130529655721312,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2950,
+          "freq_rank_end": 2999,
+          "avg_error_surprise": 12.922375882863998,
+          "std_error_surprise": 1.9710182288900817,
+          "sem_error_surprise": 0.13937203554904753,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3000,
+          "freq_rank_end": 3049,
+          "avg_error_surprise": 12.917282711029053,
+          "std_error_surprise": 1.7240864999958712,
+          "sem_error_surprise": 0.1219113255499261,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3050,
+          "freq_rank_end": 3099,
+          "avg_error_surprise": 13.116811722517014,
+          "std_error_surprise": 1.761688532891256,
+          "sem_error_surprise": 0.12457019079459872,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3100,
+          "freq_rank_end": 3149,
+          "avg_error_surprise": 12.951297780275345,
+          "std_error_surprise": 1.8309163164945494,
+          "sem_error_surprise": 0.1294653343178391,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3150,
+          "freq_rank_end": 3199,
+          "avg_error_surprise": 13.062693894863127,
+          "std_error_surprise": 1.8020393767550995,
+          "sem_error_surprise": 0.12742342632687106,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3200,
+          "freq_rank_end": 3249,
+          "avg_error_surprise": 13.085416559219361,
+          "std_error_surprise": 1.8257837021225145,
+          "sem_error_surprise": 0.12910240367507095,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3250,
+          "freq_rank_end": 3299,
+          "avg_error_surprise": 13.276263752102855,
+          "std_error_surprise": 1.7203143013497566,
+          "sem_error_surprise": 0.12164459082566106,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3300,
+          "freq_rank_end": 3349,
+          "avg_error_surprise": 13.152085702657699,
+          "std_error_surprise": 1.7843434482126699,
+          "sem_error_surprise": 0.1261721352196966,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3350,
+          "freq_rank_end": 3399,
+          "avg_error_surprise": 13.166704182386397,
+          "std_error_surprise": 1.7550429260973468,
+          "sem_error_surprise": 0.12410027543169147,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3400,
+          "freq_rank_end": 3449,
+          "avg_error_surprise": 12.837293149709701,
+          "std_error_surprise": 1.7678753477256886,
+          "sem_error_surprise": 0.125007664666936,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3450,
+          "freq_rank_end": 3499,
+          "avg_error_surprise": 13.129513408184053,
+          "std_error_surprise": 1.832972982087122,
+          "sem_error_surprise": 0.12961076253655318,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3500,
+          "freq_rank_end": 3549,
+          "avg_error_surprise": 13.303903308153153,
+          "std_error_surprise": 1.7901680999804885,
+          "sem_error_surprise": 0.12658400029600408,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3550,
+          "freq_rank_end": 3599,
+          "avg_error_surprise": 13.233966961145402,
+          "std_error_surprise": 1.6624081153313033,
+          "sem_error_surprise": 0.11755000514503126,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3600,
+          "freq_rank_end": 3649,
+          "avg_error_surprise": 13.103185818195342,
+          "std_error_surprise": 1.7848132329894522,
+          "sem_error_surprise": 0.12620535401983268,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3650,
+          "freq_rank_end": 3699,
+          "avg_error_surprise": 13.178810663223267,
+          "std_error_surprise": 1.7836797914157279,
+          "sem_error_surprise": 0.12612520759754678,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3700,
+          "freq_rank_end": 3749,
+          "avg_error_surprise": 13.407072644710542,
+          "std_error_surprise": 1.7853922649751501,
+          "sem_error_surprise": 0.1262462977641938,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3750,
+          "freq_rank_end": 3799,
+          "avg_error_surprise": 13.036046160936355,
+          "std_error_surprise": 1.8011711348267843,
+          "sem_error_surprise": 0.12736203235134883,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3800,
+          "freq_rank_end": 3849,
+          "avg_error_surprise": 13.37626700735092,
+          "std_error_surprise": 1.827016394824177,
+          "sem_error_surprise": 0.12918956821191743,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3850,
+          "freq_rank_end": 3899,
+          "avg_error_surprise": 13.373745843410493,
+          "std_error_surprise": 1.804017511086379,
+          "sem_error_surprise": 0.12756330154684561,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3900,
+          "freq_rank_end": 3949,
+          "avg_error_surprise": 13.325392955064771,
+          "std_error_surprise": 1.7024754874619485,
+          "sem_error_surprise": 0.12038319619882168,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3950,
+          "freq_rank_end": 3999,
+          "avg_error_surprise": 13.297047809362411,
+          "std_error_surprise": 1.772170904393999,
+          "sem_error_surprise": 0.12531140639184934,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        }
+      ],
+      "baseline_avg": 7.205897961109876,
+      "baseline_std": 2.849200028679855,
+      "baseline_sem": 0.20146886612364312
+    },
+    "A2": {
+      "bin_results": [
+        {
+          "freq_rank_start": 0,
+          "freq_rank_end": 49,
+          "avg_error_surprise": 7.871849191039801,
+          "std_error_surprise": 1.7194005172693543,
+          "sem_error_surprise": 0.12157997653368179,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 50,
+          "freq_rank_end": 99,
+          "avg_error_surprise": 9.158641965448856,
+          "std_error_surprise": 1.5439861738707883,
+          "sem_error_surprise": 0.10917630936023062,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 100,
+          "freq_rank_end": 149,
+          "avg_error_surprise": 9.261042932748794,
+          "std_error_surprise": 1.6178781811718785,
+          "sem_error_surprise": 0.1144012633040393,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 150,
+          "freq_rank_end": 199,
+          "avg_error_surprise": 9.834427455902098,
+          "std_error_surprise": 1.6672448936005275,
+          "sem_error_surprise": 0.1178920170163577,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 200,
+          "freq_rank_end": 249,
+          "avg_error_surprise": 10.297070231854915,
+          "std_error_surprise": 1.607009085013392,
+          "sem_error_surprise": 0.11363270214413584,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 250,
+          "freq_rank_end": 299,
+          "avg_error_surprise": 10.375892300590872,
+          "std_error_surprise": 1.7188067244545873,
+          "sem_error_surprise": 0.12153798904108763,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 300,
+          "freq_rank_end": 349,
+          "avg_error_surprise": 10.388860858201982,
+          "std_error_surprise": 1.826218286092242,
+          "sem_error_surprise": 0.12913313340226987,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 350,
+          "freq_rank_end": 399,
+          "avg_error_surprise": 10.765931054234505,
+          "std_error_surprise": 1.6705675392465997,
+          "sem_error_surprise": 0.11812696354313945,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 400,
+          "freq_rank_end": 449,
+          "avg_error_surprise": 10.974017306208612,
+          "std_error_surprise": 1.59362306418069,
+          "sem_error_surprise": 0.11268616753374505,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 450,
+          "freq_rank_end": 499,
+          "avg_error_surprise": 11.106058895349502,
+          "std_error_surprise": 1.635629175835568,
+          "sem_error_surprise": 0.1156564481739894,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 500,
+          "freq_rank_end": 549,
+          "avg_error_surprise": 11.414031654596329,
+          "std_error_surprise": 1.5509708280125005,
+          "sem_error_surprise": 0.10967019899101536,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 550,
+          "freq_rank_end": 599,
+          "avg_error_surprise": 11.36487817668915,
+          "std_error_surprise": 1.801247664961685,
+          "sem_error_surprise": 0.1273674438490842,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 600,
+          "freq_rank_end": 649,
+          "avg_error_surprise": 11.171722497820852,
+          "std_error_surprise": 1.698329032706595,
+          "sem_error_surprise": 0.12008999757128232,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 650,
+          "freq_rank_end": 699,
+          "avg_error_surprise": 11.282325468063355,
+          "std_error_surprise": 1.633272672563949,
+          "sem_error_surprise": 0.11548981822966439,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 700,
+          "freq_rank_end": 749,
+          "avg_error_surprise": 11.540172737836837,
+          "std_error_surprise": 1.581388733462867,
+          "sem_error_surprise": 0.11182106971235989,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 750,
+          "freq_rank_end": 799,
+          "avg_error_surprise": 11.566101218819618,
+          "std_error_surprise": 1.571391235592255,
+          "sem_error_surprise": 0.11111413985843911,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 800,
+          "freq_rank_end": 849,
+          "avg_error_surprise": 11.573792747817933,
+          "std_error_surprise": 1.6464157104450683,
+          "sem_error_surprise": 0.1164191713507775,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 850,
+          "freq_rank_end": 899,
+          "avg_error_surprise": 11.664886282324792,
+          "std_error_surprise": 1.6420017510404792,
+          "sem_error_surprise": 0.1161070572880908,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 900,
+          "freq_rank_end": 949,
+          "avg_error_surprise": 11.677425921797754,
+          "std_error_surprise": 1.6657696700657956,
+          "sem_error_surprise": 0.11778770295984019,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 950,
+          "freq_rank_end": 999,
+          "avg_error_surprise": 11.864812464714051,
+          "std_error_surprise": 1.6631889153378834,
+          "sem_error_surprise": 0.1176052160429716,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1000,
+          "freq_rank_end": 1049,
+          "avg_error_surprise": 11.913236444473268,
+          "std_error_surprise": 1.6412430378399254,
+          "sem_error_surprise": 0.11605340816318206,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1050,
+          "freq_rank_end": 1099,
+          "avg_error_surprise": 11.964909376382828,
+          "std_error_surprise": 1.6198112667725046,
+          "sem_error_surprise": 0.11453795309772098,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1100,
+          "freq_rank_end": 1149,
+          "avg_error_surprise": 11.669664343595505,
+          "std_error_surprise": 1.6240666710894947,
+          "sem_error_surprise": 0.11483885562264438,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1150,
+          "freq_rank_end": 1199,
+          "avg_error_surprise": 11.764150885820388,
+          "std_error_surprise": 1.671013490907484,
+          "sem_error_surprise": 0.11815849708748873,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1200,
+          "freq_rank_end": 1249,
+          "avg_error_surprise": 11.878053974866866,
+          "std_error_surprise": 1.653876371879486,
+          "sem_error_surprise": 0.11694671978001887,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1250,
+          "freq_rank_end": 1299,
+          "avg_error_surprise": 11.889193783044815,
+          "std_error_surprise": 1.7737492183412376,
+          "sem_error_surprise": 0.1254230100413427,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1300,
+          "freq_rank_end": 1349,
+          "avg_error_surprise": 12.140991311073304,
+          "std_error_surprise": 1.628967344982299,
+          "sem_error_surprise": 0.11518538559684298,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1350,
+          "freq_rank_end": 1399,
+          "avg_error_surprise": 12.090554403066635,
+          "std_error_surprise": 1.7539863125913127,
+          "sem_error_surprise": 0.12402556157417047,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1400,
+          "freq_rank_end": 1449,
+          "avg_error_surprise": 12.302004453420642,
+          "std_error_surprise": 1.7476183313043636,
+          "sem_error_surprise": 0.12357527729912339,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1450,
+          "freq_rank_end": 1499,
+          "avg_error_surprise": 12.508922859668731,
+          "std_error_surprise": 1.7155045614878106,
+          "sem_error_surprise": 0.12130449085844854,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1500,
+          "freq_rank_end": 1549,
+          "avg_error_surprise": 12.466135227680207,
+          "std_error_surprise": 1.600978047244058,
+          "sem_error_surprise": 0.11320624337370702,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1550,
+          "freq_rank_end": 1599,
+          "avg_error_surprise": 12.162226778745652,
+          "std_error_surprise": 1.6733664649001974,
+          "sem_error_surprise": 0.11832487747410904,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1600,
+          "freq_rank_end": 1649,
+          "avg_error_surprise": 12.116426549673081,
+          "std_error_surprise": 1.6722384684549718,
+          "sem_error_surprise": 0.1182451160805517,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1650,
+          "freq_rank_end": 1699,
+          "avg_error_surprise": 12.188735732316971,
+          "std_error_surprise": 1.5922933857261456,
+          "sem_error_surprise": 0.11259214506854445,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1700,
+          "freq_rank_end": 1749,
+          "avg_error_surprise": 12.397264292716981,
+          "std_error_surprise": 1.7329390597050662,
+          "sem_error_surprise": 0.12253729605004916,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1750,
+          "freq_rank_end": 1799,
+          "avg_error_surprise": 12.674447863578797,
+          "std_error_surprise": 1.7031492675006972,
+          "sem_error_surprise": 0.1204308396422644,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1800,
+          "freq_rank_end": 1849,
+          "avg_error_surprise": 12.299575041294098,
+          "std_error_surprise": 1.8015029134892706,
+          "sem_error_surprise": 0.12738549264555854,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1850,
+          "freq_rank_end": 1899,
+          "avg_error_surprise": 12.57480530309677,
+          "std_error_surprise": 1.586833010812378,
+          "sem_error_surprise": 0.11220603825560986,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1900,
+          "freq_rank_end": 1949,
+          "avg_error_surprise": 12.778888236522675,
+          "std_error_surprise": 1.707417377290177,
+          "sem_error_surprise": 0.1207326405797634,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1950,
+          "freq_rank_end": 1999,
+          "avg_error_surprise": 12.805395163059236,
+          "std_error_surprise": 1.656220759077369,
+          "sem_error_surprise": 0.11711249298855388,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2000,
+          "freq_rank_end": 2049,
+          "avg_error_surprise": 12.549872007489205,
+          "std_error_surprise": 1.6432879451586788,
+          "sem_error_surprise": 0.11619800494638091,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2050,
+          "freq_rank_end": 2099,
+          "avg_error_surprise": 12.739084388494492,
+          "std_error_surprise": 1.5950132603321574,
+          "sem_error_surprise": 0.11278446924633326,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2100,
+          "freq_rank_end": 2149,
+          "avg_error_surprise": 12.432856348037719,
+          "std_error_surprise": 1.8002239963851787,
+          "sem_error_surprise": 0.12729505954987066,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2150,
+          "freq_rank_end": 2199,
+          "avg_error_surprise": 12.605780448675155,
+          "std_error_surprise": 1.742872940313179,
+          "sem_error_surprise": 0.12323972748419858,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2200,
+          "freq_rank_end": 2249,
+          "avg_error_surprise": 12.624309592962263,
+          "std_error_surprise": 1.7034972991708535,
+          "sem_error_surprise": 0.12045544919766793,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2250,
+          "freq_rank_end": 2299,
+          "avg_error_surprise": 12.461784934043884,
+          "std_error_surprise": 1.7050262980499618,
+          "sem_error_surprise": 0.12056356574525234,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2300,
+          "freq_rank_end": 2349,
+          "avg_error_surprise": 12.696369050741195,
+          "std_error_surprise": 1.7225506491511324,
+          "sem_error_surprise": 0.12180272449520552,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2350,
+          "freq_rank_end": 2399,
+          "avg_error_surprise": 12.634704568862915,
+          "std_error_surprise": 1.708796118551836,
+          "sem_error_surprise": 0.12083013230932549,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2400,
+          "freq_rank_end": 2449,
+          "avg_error_surprise": 12.581233519792558,
+          "std_error_surprise": 1.7464894338121095,
+          "sem_error_surprise": 0.12349545219191965,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2450,
+          "freq_rank_end": 2499,
+          "avg_error_surprise": 12.760737802863122,
+          "std_error_surprise": 1.7006105981028155,
+          "sem_error_surprise": 0.12025132860762112,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2500,
+          "freq_rank_end": 2549,
+          "avg_error_surprise": 12.593485151767732,
+          "std_error_surprise": 1.7449266171094355,
+          "sem_error_surprise": 0.12338494436309842,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2550,
+          "freq_rank_end": 2599,
+          "avg_error_surprise": 12.892318680047987,
+          "std_error_surprise": 1.658601368231316,
+          "sem_error_surprise": 0.11728082747616496,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2600,
+          "freq_rank_end": 2649,
+          "avg_error_surprise": 12.771020356416702,
+          "std_error_surprise": 1.810670974275336,
+          "sem_error_surprise": 0.12803377244077427,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2650,
+          "freq_rank_end": 2699,
+          "avg_error_surprise": 12.834781419038773,
+          "std_error_surprise": 1.7060489030441792,
+          "sem_error_surprise": 0.12063587483784098,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2700,
+          "freq_rank_end": 2749,
+          "avg_error_surprise": 12.722572156667711,
+          "std_error_surprise": 1.7145017787819876,
+          "sem_error_surprise": 0.12123358341331414,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2750,
+          "freq_rank_end": 2799,
+          "avg_error_surprise": 12.78273371696472,
+          "std_error_surprise": 1.7829406757230726,
+          "sem_error_surprise": 0.12607294422571097,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2800,
+          "freq_rank_end": 2849,
+          "avg_error_surprise": 13.056485606551169,
+          "std_error_surprise": 1.7397919869377398,
+          "sem_error_surprise": 0.12302187118176931,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2850,
+          "freq_rank_end": 2899,
+          "avg_error_surprise": 12.960808548450471,
+          "std_error_surprise": 1.7350815296697322,
+          "sem_error_surprise": 0.12268879155409955,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2900,
+          "freq_rank_end": 2949,
+          "avg_error_surprise": 12.896719117164611,
+          "std_error_surprise": 1.7718902865486759,
+          "sem_error_surprise": 0.12529156371371436,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2950,
+          "freq_rank_end": 2999,
+          "avg_error_surprise": 12.759039443254471,
+          "std_error_surprise": 1.7009663358232892,
+          "sem_error_surprise": 0.12027648306306819,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3000,
+          "freq_rank_end": 3049,
+          "avg_error_surprise": 13.019189167022706,
+          "std_error_surprise": 1.6685181570045478,
+          "sem_error_surprise": 0.11798205033507962,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3050,
+          "freq_rank_end": 3099,
+          "avg_error_surprise": 12.988791090011595,
+          "std_error_surprise": 1.7311924379667114,
+          "sem_error_surprise": 0.12241379124251331,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3100,
+          "freq_rank_end": 3149,
+          "avg_error_surprise": 12.964663485527039,
+          "std_error_surprise": 1.6728776274072865,
+          "sem_error_surprise": 0.11829031144349549,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3150,
+          "freq_rank_end": 3199,
+          "avg_error_surprise": 12.901061646699906,
+          "std_error_surprise": 1.6593928100350823,
+          "sem_error_surprise": 0.11733679086280072,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3200,
+          "freq_rank_end": 3249,
+          "avg_error_surprise": 13.047005211353303,
+          "std_error_surprise": 1.8187811763870432,
+          "sem_error_surprise": 0.12860725033177245,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3250,
+          "freq_rank_end": 3299,
+          "avg_error_surprise": 13.019677516698836,
+          "std_error_surprise": 1.7288545635312933,
+          "sem_error_surprise": 0.12224847855582863,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3300,
+          "freq_rank_end": 3349,
+          "avg_error_surprise": 13.00271922659874,
+          "std_error_surprise": 1.8195787406425747,
+          "sem_error_surprise": 0.12866364664112429,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3350,
+          "freq_rank_end": 3399,
+          "avg_error_surprise": 13.014332020044327,
+          "std_error_surprise": 1.71544389930536,
+          "sem_error_surprise": 0.12130020139439131,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3400,
+          "freq_rank_end": 3449,
+          "avg_error_surprise": 13.024087239742279,
+          "std_error_surprise": 1.6893861113186543,
+          "sem_error_surprise": 0.11945763753557921,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3450,
+          "freq_rank_end": 3499,
+          "avg_error_surprise": 13.118850885152815,
+          "std_error_surprise": 1.694019470417963,
+          "sem_error_surprise": 0.11978526549945856,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3500,
+          "freq_rank_end": 3549,
+          "avg_error_surprise": 12.92521900486946,
+          "std_error_surprise": 1.75590372502094,
+          "sem_error_surprise": 0.12416114310730254,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3550,
+          "freq_rank_end": 3599,
+          "avg_error_surprise": 13.254393549919127,
+          "std_error_surprise": 1.6237904719896032,
+          "sem_error_surprise": 0.11481932539699531,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3600,
+          "freq_rank_end": 3649,
+          "avg_error_surprise": 13.164557452559471,
+          "std_error_surprise": 1.6281775250808181,
+          "sem_error_surprise": 0.11512953689601765,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3650,
+          "freq_rank_end": 3699,
+          "avg_error_surprise": 13.225206841707228,
+          "std_error_surprise": 1.695403639818065,
+          "sem_error_surprise": 0.11988314105637086,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3700,
+          "freq_rank_end": 3749,
+          "avg_error_surprise": 13.228829916477203,
+          "std_error_surprise": 1.7527228894602969,
+          "sem_error_surprise": 0.12393622406782553,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3750,
+          "freq_rank_end": 3799,
+          "avg_error_surprise": 13.201483286976814,
+          "std_error_surprise": 1.7592973936586944,
+          "sem_error_surprise": 0.12440111171798818,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3800,
+          "freq_rank_end": 3849,
+          "avg_error_surprise": 13.011829778432848,
+          "std_error_surprise": 1.7242392918463878,
+          "sem_error_surprise": 0.12192212956528714,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3850,
+          "freq_rank_end": 3899,
+          "avg_error_surprise": 13.234675308942796,
+          "std_error_surprise": 1.7096766251061688,
+          "sem_error_surprise": 0.12089239352487027,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3900,
+          "freq_rank_end": 3949,
+          "avg_error_surprise": 13.345988538980482,
+          "std_error_surprise": 1.725896858726514,
+          "sem_error_surprise": 0.12203933724340787,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3950,
+          "freq_rank_end": 3999,
+          "avg_error_surprise": 13.172408256292343,
+          "std_error_surprise": 1.7822935291171114,
+          "sem_error_surprise": 0.12602718405036129,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        }
+      ],
+      "baseline_avg": 7.2589957639575005,
+      "baseline_std": 2.8901554029672063,
+      "baseline_sem": 0.20436484841210503
+    },
+    "A3": {
+      "bin_results": [
+        {
+          "freq_rank_start": 0,
+          "freq_rank_end": 49,
+          "avg_error_surprise": 10.639838754594326,
+          "std_error_surprise": 1.2371314666377422,
+          "sem_error_surprise": 0.08747840492788066,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 50,
+          "freq_rank_end": 99,
+          "avg_error_surprise": 10.57856036555767,
+          "std_error_surprise": 1.3713534005697081,
+          "sem_error_surprise": 0.09696932889460724,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 100,
+          "freq_rank_end": 149,
+          "avg_error_surprise": 10.28470272898674,
+          "std_error_surprise": 1.3710937368192055,
+          "sem_error_surprise": 0.09695096789472638,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 150,
+          "freq_rank_end": 199,
+          "avg_error_surprise": 10.74014637029171,
+          "std_error_surprise": 1.1198319699281034,
+          "sem_error_surprise": 0.07918407797256519,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 200,
+          "freq_rank_end": 249,
+          "avg_error_surprise": 10.984474153012037,
+          "std_error_surprise": 1.3065613540332266,
+          "sem_error_surprise": 0.0923878393473172,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 250,
+          "freq_rank_end": 299,
+          "avg_error_surprise": 11.388792974829673,
+          "std_error_surprise": 1.2639929459799844,
+          "sem_error_surprise": 0.08937779834744083,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 300,
+          "freq_rank_end": 349,
+          "avg_error_surprise": 11.446107371509074,
+          "std_error_surprise": 1.55223076276686,
+          "sem_error_surprise": 0.10975928983188137,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 350,
+          "freq_rank_end": 399,
+          "avg_error_surprise": 11.27053007888794,
+          "std_error_surprise": 1.4801177856643906,
+          "sem_error_surprise": 0.10466013231981074,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 400,
+          "freq_rank_end": 449,
+          "avg_error_surprise": 11.644025784730914,
+          "std_error_surprise": 1.8180633008687757,
+          "sem_error_surprise": 0.12855648886707097,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 450,
+          "freq_rank_end": 499,
+          "avg_error_surprise": 11.615946024179461,
+          "std_error_surprise": 1.6449161881234713,
+          "sem_error_surprise": 0.11631313911056332,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 500,
+          "freq_rank_end": 549,
+          "avg_error_surprise": 11.922029356956482,
+          "std_error_surprise": 1.9360739927602604,
+          "sem_error_surprise": 0.1369011049159695,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 550,
+          "freq_rank_end": 599,
+          "avg_error_surprise": 11.560896751403806,
+          "std_error_surprise": 1.6474457101728617,
+          "sem_error_surprise": 0.11649200332999181,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 600,
+          "freq_rank_end": 649,
+          "avg_error_surprise": 11.532475823640825,
+          "std_error_surprise": 1.6252704911439968,
+          "sem_error_surprise": 0.11492397855503107,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 650,
+          "freq_rank_end": 699,
+          "avg_error_surprise": 11.662760331630707,
+          "std_error_surprise": 1.8253073139948128,
+          "sem_error_surprise": 0.12906871794751348,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 700,
+          "freq_rank_end": 749,
+          "avg_error_surprise": 11.786081989288332,
+          "std_error_surprise": 2.0338095597585846,
+          "sem_error_surprise": 0.1438120531347322,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 750,
+          "freq_rank_end": 799,
+          "avg_error_surprise": 11.608405483484267,
+          "std_error_surprise": 1.968712361050388,
+          "sem_error_surprise": 0.1392089860704508,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 800,
+          "freq_rank_end": 849,
+          "avg_error_surprise": 11.764159002304076,
+          "std_error_surprise": 2.003427384297277,
+          "sem_error_surprise": 0.14166370890514318,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 850,
+          "freq_rank_end": 899,
+          "avg_error_surprise": 11.639192272663117,
+          "std_error_surprise": 2.0250533106392536,
+          "sem_error_surprise": 0.14319289282172842,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 900,
+          "freq_rank_end": 949,
+          "avg_error_surprise": 11.7035734167099,
+          "std_error_surprise": 1.9534297613997367,
+          "sem_error_surprise": 0.13812834308573732,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 950,
+          "freq_rank_end": 999,
+          "avg_error_surprise": 11.63438333296776,
+          "std_error_surprise": 2.0025799645193176,
+          "sem_error_surprise": 0.14160378727799253,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1000,
+          "freq_rank_end": 1049,
+          "avg_error_surprise": 11.70792863368988,
+          "std_error_surprise": 1.934650154695808,
+          "sem_error_surprise": 0.1368004243609009,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1050,
+          "freq_rank_end": 1099,
+          "avg_error_surprise": 11.894554077625276,
+          "std_error_surprise": 2.1552789756640816,
+          "sem_error_surprise": 0.1524012379040868,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1100,
+          "freq_rank_end": 1149,
+          "avg_error_surprise": 11.736545863628386,
+          "std_error_surprise": 2.0153493694466125,
+          "sem_error_surprise": 0.14250672055957322,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1150,
+          "freq_rank_end": 1199,
+          "avg_error_surprise": 11.741852323055268,
+          "std_error_surprise": 2.0809461873919526,
+          "sem_error_surprise": 0.14714511603891417,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1200,
+          "freq_rank_end": 1249,
+          "avg_error_surprise": 11.703537842512132,
+          "std_error_surprise": 2.0376843948118415,
+          "sem_error_surprise": 0.14408604534894592,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1250,
+          "freq_rank_end": 1299,
+          "avg_error_surprise": 11.61863984441757,
+          "std_error_surprise": 2.1002076504330733,
+          "sem_error_surprise": 0.1485071071521092,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1300,
+          "freq_rank_end": 1349,
+          "avg_error_surprise": 11.726664574861527,
+          "std_error_surprise": 1.8890591589048435,
+          "sem_error_surprise": 0.13357665413241707,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1350,
+          "freq_rank_end": 1399,
+          "avg_error_surprise": 11.967568397760392,
+          "std_error_surprise": 2.264711283987821,
+          "sem_error_surprise": 0.1601392706337481,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1400,
+          "freq_rank_end": 1449,
+          "avg_error_surprise": 11.888884674787521,
+          "std_error_surprise": 2.216266422524205,
+          "sem_error_surprise": 0.15671370162829154,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1450,
+          "freq_rank_end": 1499,
+          "avg_error_surprise": 11.79595067691803,
+          "std_error_surprise": 2.229197070908039,
+          "sem_error_surprise": 0.15762803654402635,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1500,
+          "freq_rank_end": 1549,
+          "avg_error_surprise": 11.883988758325577,
+          "std_error_surprise": 2.068861094489716,
+          "sem_error_surprise": 0.1462905709246701,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1550,
+          "freq_rank_end": 1599,
+          "avg_error_surprise": 11.721034987926481,
+          "std_error_surprise": 1.9880900513188704,
+          "sem_error_surprise": 0.14057919568970845,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1600,
+          "freq_rank_end": 1649,
+          "avg_error_surprise": 11.761671608686447,
+          "std_error_surprise": 2.0572421818111493,
+          "sem_error_surprise": 0.1454689897301672,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1650,
+          "freq_rank_end": 1699,
+          "avg_error_surprise": 11.838203200101852,
+          "std_error_surprise": 1.9286567637855645,
+          "sem_error_surprise": 0.1363766276254074,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1700,
+          "freq_rank_end": 1749,
+          "avg_error_surprise": 11.759237014055252,
+          "std_error_surprise": 2.0590220862155393,
+          "sem_error_surprise": 0.14559484797758798,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1750,
+          "freq_rank_end": 1799,
+          "avg_error_surprise": 11.799207186460494,
+          "std_error_surprise": 2.1036300636642102,
+          "sem_error_surprise": 0.14874910831248517,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1800,
+          "freq_rank_end": 1849,
+          "avg_error_surprise": 11.746147529602052,
+          "std_error_surprise": 1.991026344685248,
+          "sem_error_surprise": 0.14078682298480033,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1850,
+          "freq_rank_end": 1899,
+          "avg_error_surprise": 11.919986761808396,
+          "std_error_surprise": 2.004024049816471,
+          "sem_error_surprise": 0.14170589952861543,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1900,
+          "freq_rank_end": 1949,
+          "avg_error_surprise": 11.698254525899888,
+          "std_error_surprise": 2.081381494984862,
+          "sem_error_surprise": 0.147175896933999,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1950,
+          "freq_rank_end": 1999,
+          "avg_error_surprise": 11.95386040365696,
+          "std_error_surprise": 2.2481919073939416,
+          "sem_error_surprise": 0.15897117431269747,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2000,
+          "freq_rank_end": 2049,
+          "avg_error_surprise": 11.96060587978363,
+          "std_error_surprise": 2.2065214166776195,
+          "sem_error_surprise": 0.15602462565660924,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2050,
+          "freq_rank_end": 2099,
+          "avg_error_surprise": 12.107121861934662,
+          "std_error_surprise": 2.456730163474222,
+          "sem_error_surprise": 0.17371705581381577,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2100,
+          "freq_rank_end": 2149,
+          "avg_error_surprise": 11.953361825704576,
+          "std_error_surprise": 2.2369122350514883,
+          "sem_error_surprise": 0.15817358103240636,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2150,
+          "freq_rank_end": 2199,
+          "avg_error_surprise": 11.699723172664642,
+          "std_error_surprise": 1.9905595879142368,
+          "sem_error_surprise": 0.14075381829700565,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2200,
+          "freq_rank_end": 2249,
+          "avg_error_surprise": 11.810817653894423,
+          "std_error_surprise": 2.0614394503446474,
+          "sem_error_surprise": 0.14576578143441693,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2250,
+          "freq_rank_end": 2299,
+          "avg_error_surprise": 11.808162784814835,
+          "std_error_surprise": 2.111272732533269,
+          "sem_error_surprise": 0.14928952661085265,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2300,
+          "freq_rank_end": 2349,
+          "avg_error_surprise": 11.916382538795471,
+          "std_error_surprise": 2.285414718633914,
+          "sem_error_surprise": 0.1616032245369586,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2350,
+          "freq_rank_end": 2399,
+          "avg_error_surprise": 11.915271963119508,
+          "std_error_surprise": 2.1491210365881424,
+          "sem_error_surprise": 0.15196580585621378,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2400,
+          "freq_rank_end": 2449,
+          "avg_error_surprise": 11.988068319559098,
+          "std_error_surprise": 2.2637246582937047,
+          "sem_error_surprise": 0.16006950566186787,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2450,
+          "freq_rank_end": 2499,
+          "avg_error_surprise": 11.822540778398515,
+          "std_error_surprise": 2.057435138328591,
+          "sem_error_surprise": 0.14548263381636292,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2500,
+          "freq_rank_end": 2549,
+          "avg_error_surprise": 11.749605758190155,
+          "std_error_surprise": 2.118328046711289,
+          "sem_error_surprise": 0.1497884126607206,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2550,
+          "freq_rank_end": 2599,
+          "avg_error_surprise": 11.875619251251221,
+          "std_error_surprise": 2.2724361826777866,
+          "sem_error_surprise": 0.16068550345851348,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2600,
+          "freq_rank_end": 2649,
+          "avg_error_surprise": 11.82628072977066,
+          "std_error_surprise": 2.1913058470424587,
+          "sem_error_surprise": 0.1549487224097454,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2650,
+          "freq_rank_end": 2699,
+          "avg_error_surprise": 11.801085883378983,
+          "std_error_surprise": 2.2137530940508277,
+          "sem_error_surprise": 0.1565359824676041,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2700,
+          "freq_rank_end": 2749,
+          "avg_error_surprise": 11.96871970796585,
+          "std_error_surprise": 2.35730247274101,
+          "sem_error_surprise": 0.1666864563782985,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2750,
+          "freq_rank_end": 2799,
+          "avg_error_surprise": 11.890914160251619,
+          "std_error_surprise": 2.24313414522842,
+          "sem_error_surprise": 0.15861353652021057,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2800,
+          "freq_rank_end": 2849,
+          "avg_error_surprise": 11.68843883371353,
+          "std_error_surprise": 1.9456008015384096,
+          "sem_error_surprise": 0.13757475202497915,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2850,
+          "freq_rank_end": 2899,
+          "avg_error_surprise": 11.966700822353364,
+          "std_error_surprise": 2.25952656505242,
+          "sem_error_surprise": 0.1597726556419713,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2900,
+          "freq_rank_end": 2949,
+          "avg_error_surprise": 11.911752268791197,
+          "std_error_surprise": 2.2306334221829323,
+          "sem_error_surprise": 0.15772960191669064,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2950,
+          "freq_rank_end": 2999,
+          "avg_error_surprise": 12.087541734933852,
+          "std_error_surprise": 2.336558916643405,
+          "sem_error_surprise": 0.16521966546004446,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3000,
+          "freq_rank_end": 3049,
+          "avg_error_surprise": 11.842742973804475,
+          "std_error_surprise": 2.140812907112532,
+          "sem_error_surprise": 0.15137833238709578,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3050,
+          "freq_rank_end": 3099,
+          "avg_error_surprise": 11.916005174398425,
+          "std_error_surprise": 2.1548331036919937,
+          "sem_error_surprise": 0.15236970999458635,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3100,
+          "freq_rank_end": 3149,
+          "avg_error_surprise": 11.721451582431792,
+          "std_error_surprise": 2.1759163064413176,
+          "sem_error_surprise": 0.15386051755790414,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3150,
+          "freq_rank_end": 3199,
+          "avg_error_surprise": 11.954922588109971,
+          "std_error_surprise": 2.2126446824719266,
+          "sem_error_surprise": 0.15645760593322544,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3200,
+          "freq_rank_end": 3249,
+          "avg_error_surprise": 11.8221144862175,
+          "std_error_surprise": 2.07920263701545,
+          "sem_error_surprise": 0.14702182840945766,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3250,
+          "freq_rank_end": 3299,
+          "avg_error_surprise": 12.070635050773621,
+          "std_error_surprise": 2.3174101743335753,
+          "sem_error_surprise": 0.16386564490619704,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3300,
+          "freq_rank_end": 3349,
+          "avg_error_surprise": 11.635327039003371,
+          "std_error_surprise": 2.1223781216374853,
+          "sem_error_surprise": 0.1500747962051833,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3350,
+          "freq_rank_end": 3399,
+          "avg_error_surprise": 11.9260371966362,
+          "std_error_surprise": 2.3046295067223523,
+          "sem_error_surprise": 0.16296191523259834,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3400,
+          "freq_rank_end": 3449,
+          "avg_error_surprise": 11.963759124994278,
+          "std_error_surprise": 2.178961291029122,
+          "sem_error_surprise": 0.15407583048296863,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3450,
+          "freq_rank_end": 3499,
+          "avg_error_surprise": 11.86379312157631,
+          "std_error_surprise": 2.248052450875718,
+          "sem_error_surprise": 0.1589613132477258,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3500,
+          "freq_rank_end": 3549,
+          "avg_error_surprise": 11.853220847368242,
+          "std_error_surprise": 2.1172258269278665,
+          "sem_error_surprise": 0.149710473952399,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3550,
+          "freq_rank_end": 3599,
+          "avg_error_surprise": 11.793504598140716,
+          "std_error_surprise": 2.2641167506214277,
+          "sem_error_surprise": 0.16009723077624627,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3600,
+          "freq_rank_end": 3649,
+          "avg_error_surprise": 11.834310547828672,
+          "std_error_surprise": 2.0968130018375284,
+          "sem_error_surprise": 0.1482670692479437,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3650,
+          "freq_rank_end": 3699,
+          "avg_error_surprise": 11.885223044633868,
+          "std_error_surprise": 2.120738153970303,
+          "sem_error_surprise": 0.14995883297934418,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3700,
+          "freq_rank_end": 3749,
+          "avg_error_surprise": 11.906014797687531,
+          "std_error_surprise": 2.351659821024959,
+          "sem_error_surprise": 0.1662874606490691,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3750,
+          "freq_rank_end": 3799,
+          "avg_error_surprise": 12.053746681690217,
+          "std_error_surprise": 2.460776011269524,
+          "sem_error_surprise": 0.17400314045498644,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3800,
+          "freq_rank_end": 3849,
+          "avg_error_surprise": 11.928872575759888,
+          "std_error_surprise": 2.2000849729962595,
+          "sem_error_surprise": 0.15556950035922773,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3850,
+          "freq_rank_end": 3899,
+          "avg_error_surprise": 11.96294321489334,
+          "std_error_surprise": 2.3177868591142663,
+          "sem_error_surprise": 0.16389228054247668,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3900,
+          "freq_rank_end": 3949,
+          "avg_error_surprise": 11.858244023799898,
+          "std_error_surprise": 2.260280627886837,
+          "sem_error_surprise": 0.159825975936337,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3950,
+          "freq_rank_end": 3999,
+          "avg_error_surprise": 12.039884850263597,
+          "std_error_surprise": 2.2694326985149478,
+          "sem_error_surprise": 0.16047312505664052,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        }
+      ],
+      "baseline_avg": 9.935703772604466,
+      "baseline_std": 3.0216335455453227,
+      "baseline_sem": 0.21366175703158483
+    },
+    "B1": {
+      "bin_results": [
+        {
+          "freq_rank_start": 0,
+          "freq_rank_end": 49,
+          "avg_error_surprise": 10.781200108051298,
+          "std_error_surprise": 0.5018173413700464,
+          "sem_error_surprise": 0.03548384449997644,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 50,
+          "freq_rank_end": 99,
+          "avg_error_surprise": 11.710572853565216,
+          "std_error_surprise": 0.45032737178809534,
+          "sem_error_surprise": 0.031842953834527774,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 100,
+          "freq_rank_end": 149,
+          "avg_error_surprise": 11.989591587543487,
+          "std_error_surprise": 0.35309593764651925,
+          "sem_error_surprise": 0.024967653191927612,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 150,
+          "freq_rank_end": 199,
+          "avg_error_surprise": 12.443464856147767,
+          "std_error_surprise": 0.40752829948698294,
+          "sem_error_surprise": 0.028816602409266784,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 200,
+          "freq_rank_end": 249,
+          "avg_error_surprise": 12.331673194169998,
+          "std_error_surprise": 0.5248943841123763,
+          "sem_error_surprise": 0.03711563784125977,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 250,
+          "freq_rank_end": 299,
+          "avg_error_surprise": 12.503145962238312,
+          "std_error_surprise": 0.45624136600195114,
+          "sem_error_surprise": 0.03226113637577932,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 300,
+          "freq_rank_end": 349,
+          "avg_error_surprise": 12.854330245971678,
+          "std_error_surprise": 0.3892836080176177,
+          "sem_error_surprise": 0.02752650790340233,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 350,
+          "freq_rank_end": 399,
+          "avg_error_surprise": 13.117742734909056,
+          "std_error_surprise": 0.515900066113948,
+          "sem_error_surprise": 0.03647964351637608,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 400,
+          "freq_rank_end": 449,
+          "avg_error_surprise": 12.679184919595718,
+          "std_error_surprise": 0.5085605353056983,
+          "sem_error_surprise": 0.03596066031585199,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 450,
+          "freq_rank_end": 499,
+          "avg_error_surprise": 13.057149792671202,
+          "std_error_surprise": 0.4183180461563746,
+          "sem_error_surprise": 0.029579552712987962,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 500,
+          "freq_rank_end": 549,
+          "avg_error_surprise": 13.134860150814056,
+          "std_error_surprise": 0.47398576974435785,
+          "sem_error_surprise": 0.033515855197216095,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 550,
+          "freq_rank_end": 599,
+          "avg_error_surprise": 12.72293687915802,
+          "std_error_surprise": 0.42786330020748653,
+          "sem_error_surprise": 0.030254504099756926,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 600,
+          "freq_rank_end": 649,
+          "avg_error_surprise": 13.444739978313446,
+          "std_error_surprise": 0.4619789997632743,
+          "sem_error_surprise": 0.03266684834983897,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 650,
+          "freq_rank_end": 699,
+          "avg_error_surprise": 13.159090893268585,
+          "std_error_surprise": 0.45219758992543246,
+          "sem_error_surprise": 0.03197519822724869,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 700,
+          "freq_rank_end": 749,
+          "avg_error_surprise": 13.6438407831192,
+          "std_error_surprise": 0.4924813786273713,
+          "sem_error_surprise": 0.03482369224355139,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 750,
+          "freq_rank_end": 799,
+          "avg_error_surprise": 13.091538284301759,
+          "std_error_surprise": 0.4786097906105251,
+          "sem_error_surprise": 0.033842822848297587,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 800,
+          "freq_rank_end": 849,
+          "avg_error_surprise": 13.0503363032341,
+          "std_error_surprise": 0.47296824105493823,
+          "sem_error_surprise": 0.033443905053582045,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 850,
+          "freq_rank_end": 899,
+          "avg_error_surprise": 13.40499526166916,
+          "std_error_surprise": 0.46519636217417354,
+          "sem_error_surprise": 0.032894350227667124,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 900,
+          "freq_rank_end": 949,
+          "avg_error_surprise": 13.889365652561187,
+          "std_error_surprise": 0.4865121472372571,
+          "sem_error_surprise": 0.03440160384410926,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 950,
+          "freq_rank_end": 999,
+          "avg_error_surprise": 13.272255870342256,
+          "std_error_surprise": 0.48066546478790984,
+          "sem_error_surprise": 0.03398818096337147,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1000,
+          "freq_rank_end": 1049,
+          "avg_error_surprise": 13.095191407203675,
+          "std_error_surprise": 0.49309270192738414,
+          "sem_error_surprise": 0.03486691932864503,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1050,
+          "freq_rank_end": 1099,
+          "avg_error_surprise": 13.552037645816803,
+          "std_error_surprise": 0.40586216002718056,
+          "sem_error_surprise": 0.028698788558223907,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1100,
+          "freq_rank_end": 1149,
+          "avg_error_surprise": 13.244960885524751,
+          "std_error_surprise": 0.5033342435043987,
+          "sem_error_surprise": 0.03559110567853613,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1150,
+          "freq_rank_end": 1199,
+          "avg_error_surprise": 13.312661675453187,
+          "std_error_surprise": 0.4494874465337734,
+          "sem_error_surprise": 0.03178356215022569,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1200,
+          "freq_rank_end": 1249,
+          "avg_error_surprise": 13.31143587255478,
+          "std_error_surprise": 0.46451251172258107,
+          "sem_error_surprise": 0.03284599469850327,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1250,
+          "freq_rank_end": 1299,
+          "avg_error_surprise": 13.268800792694092,
+          "std_error_surprise": 0.43677511781717177,
+          "sem_error_surprise": 0.030884664766207538,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1300,
+          "freq_rank_end": 1349,
+          "avg_error_surprise": 13.246625193119048,
+          "std_error_surprise": 0.46474871827896974,
+          "sem_error_surprise": 0.03286269702428159,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1350,
+          "freq_rank_end": 1399,
+          "avg_error_surprise": 13.477002340316771,
+          "std_error_surprise": 0.558425570470559,
+          "sem_error_surprise": 0.03948665076676985,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1400,
+          "freq_rank_end": 1449,
+          "avg_error_surprise": 13.297063150405883,
+          "std_error_surprise": 0.5089474736852638,
+          "sem_error_surprise": 0.0359880209910612,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1450,
+          "freq_rank_end": 1499,
+          "avg_error_surprise": 13.410315013885498,
+          "std_error_surprise": 0.44430941369850335,
+          "sem_error_surprise": 0.03141741993712308,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1500,
+          "freq_rank_end": 1549,
+          "avg_error_surprise": 13.99283539247513,
+          "std_error_surprise": 0.49292613216168807,
+          "sem_error_surprise": 0.0348551410675586,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1550,
+          "freq_rank_end": 1599,
+          "avg_error_surprise": 13.450345444679257,
+          "std_error_surprise": 0.6239867043095104,
+          "sem_error_surprise": 0.04412252299874999,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1600,
+          "freq_rank_end": 1649,
+          "avg_error_surprise": 13.394540952682496,
+          "std_error_surprise": 0.4952502365479337,
+          "sem_error_surprise": 0.03501948006472857,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1650,
+          "freq_rank_end": 1699,
+          "avg_error_surprise": 13.27439440727234,
+          "std_error_surprise": 0.4783357852927856,
+          "sem_error_surprise": 0.03382344774647211,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1700,
+          "freq_rank_end": 1749,
+          "avg_error_surprise": 13.288520832538607,
+          "std_error_surprise": 0.5570313461660051,
+          "sem_error_surprise": 0.03938806422074534,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1750,
+          "freq_rank_end": 1799,
+          "avg_error_surprise": 13.379259358882905,
+          "std_error_surprise": 0.5156173809222147,
+          "sem_error_surprise": 0.03645965465477451,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1800,
+          "freq_rank_end": 1849,
+          "avg_error_surprise": 13.182957950115206,
+          "std_error_surprise": 0.5621838954688397,
+          "sem_error_surprise": 0.03975240447598857,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1850,
+          "freq_rank_end": 1899,
+          "avg_error_surprise": 13.594326299190522,
+          "std_error_surprise": 0.5691460285797736,
+          "sem_error_surprise": 0.04024470162941505,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1900,
+          "freq_rank_end": 1949,
+          "avg_error_surprise": 13.710163650989532,
+          "std_error_surprise": 0.4682795015366829,
+          "sem_error_surprise": 0.033112361102724475,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1950,
+          "freq_rank_end": 1999,
+          "avg_error_surprise": 13.61653665161133,
+          "std_error_surprise": 0.4327953293391096,
+          "sem_error_surprise": 0.030603251224154953,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2000,
+          "freq_rank_end": 2049,
+          "avg_error_surprise": 13.71592351603508,
+          "std_error_surprise": 0.5066735213378865,
+          "sem_error_surprise": 0.035827228278568636,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2050,
+          "freq_rank_end": 2099,
+          "avg_error_surprise": 13.53203619670868,
+          "std_error_surprise": 0.4516324895656615,
+          "sem_error_surprise": 0.03193523959760419,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2100,
+          "freq_rank_end": 2149,
+          "avg_error_surprise": 13.241937890052796,
+          "std_error_surprise": 0.48133995480240616,
+          "sem_error_surprise": 0.034035874609680765,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2150,
+          "freq_rank_end": 2199,
+          "avg_error_surprise": 13.910556970596312,
+          "std_error_surprise": 0.42081223482734026,
+          "sem_error_surprise": 0.029755918485267815,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2200,
+          "freq_rank_end": 2249,
+          "avg_error_surprise": 13.12363415670395,
+          "std_error_surprise": 0.4316451626602695,
+          "sem_error_surprise": 0.030521922158344688,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2250,
+          "freq_rank_end": 2299,
+          "avg_error_surprise": 13.336181547641754,
+          "std_error_surprise": 0.498340273608549,
+          "sem_error_surprise": 0.03523797868069645,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2300,
+          "freq_rank_end": 2349,
+          "avg_error_surprise": 14.027171414852141,
+          "std_error_surprise": 0.46906820806683014,
+          "sem_error_surprise": 0.0331681310763078,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2350,
+          "freq_rank_end": 2399,
+          "avg_error_surprise": 13.586819478988648,
+          "std_error_surprise": 0.4424317936412637,
+          "sem_error_surprise": 0.03128465214962648,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2400,
+          "freq_rank_end": 2449,
+          "avg_error_surprise": 13.392418491840363,
+          "std_error_surprise": 0.5055802025740657,
+          "sem_error_surprise": 0.03574991896737902,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2450,
+          "freq_rank_end": 2499,
+          "avg_error_surprise": 13.552553864955904,
+          "std_error_surprise": 0.5756305576479527,
+          "sem_error_surprise": 0.04070322707710612,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2500,
+          "freq_rank_end": 2549,
+          "avg_error_surprise": 13.661234294176102,
+          "std_error_surprise": 0.5681546751160931,
+          "sem_error_surprise": 0.04017460235374292,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2550,
+          "freq_rank_end": 2599,
+          "avg_error_surprise": 13.28439732980728,
+          "std_error_surprise": 0.4265915688413753,
+          "sem_error_surprise": 0.030164579112474436,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2600,
+          "freq_rank_end": 2649,
+          "avg_error_surprise": 13.651947850704193,
+          "std_error_surprise": 0.5126539244353974,
+          "sem_error_surprise": 0.03625010663701654,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2650,
+          "freq_rank_end": 2699,
+          "avg_error_surprise": 13.689186620235441,
+          "std_error_surprise": 0.46357716470143795,
+          "sem_error_surprise": 0.03277985567636198,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2700,
+          "freq_rank_end": 2749,
+          "avg_error_surprise": 13.898758762836456,
+          "std_error_surprise": 0.4274294071014974,
+          "sem_error_surprise": 0.030223823224001425,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2750,
+          "freq_rank_end": 2799,
+          "avg_error_surprise": 13.645716207027435,
+          "std_error_surprise": 0.5807029349632402,
+          "sem_error_surprise": 0.04106189831674378,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2800,
+          "freq_rank_end": 2849,
+          "avg_error_surprise": 13.950758474826811,
+          "std_error_surprise": 0.4883065142934008,
+          "sem_error_surprise": 0.03452848475544295,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2850,
+          "freq_rank_end": 2899,
+          "avg_error_surprise": 13.696114634513856,
+          "std_error_surprise": 0.5022842451048698,
+          "sem_error_surprise": 0.03551685957968194,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2900,
+          "freq_rank_end": 2949,
+          "avg_error_surprise": 13.868012176513671,
+          "std_error_surprise": 0.43678947895310494,
+          "sem_error_surprise": 0.030885680251867928,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2950,
+          "freq_rank_end": 2999,
+          "avg_error_surprise": 13.782850969314577,
+          "std_error_surprise": 0.49092867392727013,
+          "sem_error_surprise": 0.03471389944128921,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3000,
+          "freq_rank_end": 3049,
+          "avg_error_surprise": 13.769279504299165,
+          "std_error_surprise": 0.4994904371826321,
+          "sem_error_surprise": 0.035319307526967235,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3050,
+          "freq_rank_end": 3099,
+          "avg_error_surprise": 13.967877198696137,
+          "std_error_surprise": 0.5714530928001538,
+          "sem_error_surprise": 0.04040783570490142,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3100,
+          "freq_rank_end": 3149,
+          "avg_error_surprise": 13.500471843242646,
+          "std_error_surprise": 0.4949421204537978,
+          "sem_error_surprise": 0.03499769296677294,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3150,
+          "freq_rank_end": 3199,
+          "avg_error_surprise": 14.078530296802521,
+          "std_error_surprise": 0.5372392961862639,
+          "sem_error_surprise": 0.037988554945319525,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3200,
+          "freq_rank_end": 3249,
+          "avg_error_surprise": 14.03251801586151,
+          "std_error_surprise": 0.4296170921977358,
+          "sem_error_surprise": 0.030378515920666517,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3250,
+          "freq_rank_end": 3299,
+          "avg_error_surprise": 13.562702786922454,
+          "std_error_surprise": 0.5128069430294443,
+          "sem_error_surprise": 0.03626092668556636,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3300,
+          "freq_rank_end": 3349,
+          "avg_error_surprise": 13.548493354797365,
+          "std_error_surprise": 0.4928105624132845,
+          "sem_error_surprise": 0.03484696905227898,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3350,
+          "freq_rank_end": 3399,
+          "avg_error_surprise": 13.55345793581009,
+          "std_error_surprise": 0.4650831609687425,
+          "sem_error_surprise": 0.032886345693667246,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3400,
+          "freq_rank_end": 3449,
+          "avg_error_surprise": 13.753459020614622,
+          "std_error_surprise": 0.5269064032583062,
+          "sem_error_surprise": 0.03725790907945618,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3450,
+          "freq_rank_end": 3499,
+          "avg_error_surprise": 13.73400328874588,
+          "std_error_surprise": 0.4137933713762767,
+          "sem_error_surprise": 0.029259609891020867,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3500,
+          "freq_rank_end": 3549,
+          "avg_error_surprise": 13.168233194351195,
+          "std_error_surprise": 0.5017410517480825,
+          "sem_error_surprise": 0.03547845000907396,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3550,
+          "freq_rank_end": 3599,
+          "avg_error_surprise": 14.208835384368896,
+          "std_error_surprise": 0.5237706826965067,
+          "sem_error_surprise": 0.03703618015214074,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3600,
+          "freq_rank_end": 3649,
+          "avg_error_surprise": 13.819252724647521,
+          "std_error_surprise": 0.5292128260566941,
+          "sem_error_surprise": 0.03742099779955852,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3650,
+          "freq_rank_end": 3699,
+          "avg_error_surprise": 13.739189741611481,
+          "std_error_surprise": 0.5613662466233009,
+          "sem_error_surprise": 0.03969458797165759,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3700,
+          "freq_rank_end": 3749,
+          "avg_error_surprise": 13.66555275630951,
+          "std_error_surprise": 0.6032827722708981,
+          "sem_error_surprise": 0.04265853392457717,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3750,
+          "freq_rank_end": 3799,
+          "avg_error_surprise": 13.7952650475502,
+          "std_error_surprise": 0.4498367980681789,
+          "sem_error_surprise": 0.031808265034125295,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3800,
+          "freq_rank_end": 3849,
+          "avg_error_surprise": 13.953318756580352,
+          "std_error_surprise": 0.5235243537667699,
+          "sem_error_surprise": 0.037018762066478805,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3850,
+          "freq_rank_end": 3899,
+          "avg_error_surprise": 13.262458958387374,
+          "std_error_surprise": 0.47947475393981154,
+          "sem_error_surprise": 0.033903984991859204,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3900,
+          "freq_rank_end": 3949,
+          "avg_error_surprise": 13.700597597122192,
+          "std_error_surprise": 0.505355463230414,
+          "sem_error_surprise": 0.03573402749598947,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3950,
+          "freq_rank_end": 3999,
+          "avg_error_surprise": 13.766192006587982,
+          "std_error_surprise": 0.5173748540031704,
+          "sem_error_surprise": 0.03658392676810418,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        }
+      ],
+      "baseline_avg": 0.07258212432265282,
+      "baseline_std": 0.0037225796694646952,
+      "baseline_sem": 0.0002632261327785663
+    },
+    "B2": {
+      "bin_results": [
+        {
+          "freq_rank_start": 0,
+          "freq_rank_end": 49,
+          "avg_error_surprise": 8.74078583908081,
+          "std_error_surprise": 1.2945108261655958,
+          "sem_error_surprise": 0.09153573835010928,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 50,
+          "freq_rank_end": 99,
+          "avg_error_surprise": 10.007225503921509,
+          "std_error_surprise": 1.3626812459079498,
+          "sem_error_surprise": 0.09635611495772446,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 100,
+          "freq_rank_end": 149,
+          "avg_error_surprise": 10.614170491218568,
+          "std_error_surprise": 1.3835981369827786,
+          "sem_error_surprise": 0.09783516250975964,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 150,
+          "freq_rank_end": 199,
+          "avg_error_surprise": 10.849547736644745,
+          "std_error_surprise": 1.3169934787497164,
+          "sem_error_surprise": 0.09312550196023857,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 200,
+          "freq_rank_end": 249,
+          "avg_error_surprise": 11.476256028175353,
+          "std_error_surprise": 1.3637743883834492,
+          "sem_error_surprise": 0.09643341180344733,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 250,
+          "freq_rank_end": 299,
+          "avg_error_surprise": 11.11078134083748,
+          "std_error_surprise": 1.3431141167927667,
+          "sem_error_surprise": 0.09497250998915459,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 300,
+          "freq_rank_end": 349,
+          "avg_error_surprise": 11.28028571653366,
+          "std_error_surprise": 1.334794458180191,
+          "sem_error_surprise": 0.09438422128694365,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 350,
+          "freq_rank_end": 399,
+          "avg_error_surprise": 12.243618021011352,
+          "std_error_surprise": 1.4536262008339957,
+          "sem_error_surprise": 0.10278689439201566,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 400,
+          "freq_rank_end": 449,
+          "avg_error_surprise": 12.051780412673947,
+          "std_error_surprise": 1.3571240648654976,
+          "sem_error_surprise": 0.09596316291778453,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 450,
+          "freq_rank_end": 499,
+          "avg_error_surprise": 12.635113825082778,
+          "std_error_surprise": 1.4542709645545016,
+          "sem_error_surprise": 0.10283248607191893,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 500,
+          "freq_rank_end": 549,
+          "avg_error_surprise": 12.186889518499374,
+          "std_error_surprise": 1.4862883400301883,
+          "sem_error_surprise": 0.10509645640338433,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 550,
+          "freq_rank_end": 599,
+          "avg_error_surprise": 12.125817055225372,
+          "std_error_surprise": 1.3476772258966516,
+          "sem_error_surprise": 0.0952951705282197,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 600,
+          "freq_rank_end": 649,
+          "avg_error_surprise": 12.233888465404512,
+          "std_error_surprise": 1.3289446755206917,
+          "sem_error_surprise": 0.09397057918824371,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 650,
+          "freq_rank_end": 699,
+          "avg_error_surprise": 12.073017562150955,
+          "std_error_surprise": 1.3663625453508261,
+          "sem_error_surprise": 0.09661642213768806,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 700,
+          "freq_rank_end": 749,
+          "avg_error_surprise": 12.722853314399718,
+          "std_error_surprise": 1.3816739204395503,
+          "sem_error_surprise": 0.09769909985314083,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 750,
+          "freq_rank_end": 799,
+          "avg_error_surprise": 12.54710814642906,
+          "std_error_surprise": 1.4924452193349902,
+          "sem_error_surprise": 0.10553181351412158,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 800,
+          "freq_rank_end": 849,
+          "avg_error_surprise": 12.729670985698698,
+          "std_error_surprise": 1.3801349368664797,
+          "sem_error_surprise": 0.09759027728107554,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 850,
+          "freq_rank_end": 899,
+          "avg_error_surprise": 12.648455595731734,
+          "std_error_surprise": 1.3631449937687317,
+          "sem_error_surprise": 0.09638890688343642,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 900,
+          "freq_rank_end": 949,
+          "avg_error_surprise": 12.81951461625099,
+          "std_error_surprise": 1.398912339171301,
+          "sem_error_surprise": 0.09891804013135624,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 950,
+          "freq_rank_end": 999,
+          "avg_error_surprise": 12.924378305912018,
+          "std_error_surprise": 1.4799840436589036,
+          "sem_error_surprise": 0.1046506753319098,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1000,
+          "freq_rank_end": 1049,
+          "avg_error_surprise": 12.412469816684725,
+          "std_error_surprise": 1.4875094830693245,
+          "sem_error_surprise": 0.10518280425576153,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1050,
+          "freq_rank_end": 1099,
+          "avg_error_surprise": 13.047177336215974,
+          "std_error_surprise": 1.4011929706914497,
+          "sem_error_surprise": 0.09907930513268473,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1100,
+          "freq_rank_end": 1149,
+          "avg_error_surprise": 12.394574244976043,
+          "std_error_surprise": 1.4773871855147367,
+          "sem_error_surprise": 0.10446704973155782,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1150,
+          "freq_rank_end": 1199,
+          "avg_error_surprise": 12.608627263307572,
+          "std_error_surprise": 1.373073317885793,
+          "sem_error_surprise": 0.09709094541433562,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1200,
+          "freq_rank_end": 1249,
+          "avg_error_surprise": 12.866291283607485,
+          "std_error_surprise": 1.4147757696386039,
+          "sem_error_surprise": 0.10003975405698735,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1250,
+          "freq_rank_end": 1299,
+          "avg_error_surprise": 12.907922867298126,
+          "std_error_surprise": 1.4543534508694353,
+          "sem_error_surprise": 0.10283831873518341,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1300,
+          "freq_rank_end": 1349,
+          "avg_error_surprise": 13.262247961521147,
+          "std_error_surprise": 1.4636161236371865,
+          "sem_error_surprise": 0.10349328860778229,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1350,
+          "freq_rank_end": 1399,
+          "avg_error_surprise": 12.716863083839417,
+          "std_error_surprise": 1.4003850307822059,
+          "sem_error_surprise": 0.09902217515382299,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1400,
+          "freq_rank_end": 1449,
+          "avg_error_surprise": 12.83296553993225,
+          "std_error_surprise": 1.3952156169794887,
+          "sem_error_surprise": 0.09865664239835692,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1450,
+          "freq_rank_end": 1499,
+          "avg_error_surprise": 13.171209845542908,
+          "std_error_surprise": 1.352199158278095,
+          "sem_error_surprise": 0.09561491943331826,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1500,
+          "freq_rank_end": 1549,
+          "avg_error_surprise": 13.192477146148681,
+          "std_error_surprise": 1.5051532817119406,
+          "sem_error_surprise": 0.1064304092223699,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1550,
+          "freq_rank_end": 1599,
+          "avg_error_surprise": 13.300314033269881,
+          "std_error_surprise": 1.460058346562921,
+          "sem_error_surprise": 0.10324171577826598,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1600,
+          "freq_rank_end": 1649,
+          "avg_error_surprise": 12.767099487543105,
+          "std_error_surprise": 1.441584489806044,
+          "sem_error_surprise": 0.1019354168395203,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1650,
+          "freq_rank_end": 1699,
+          "avg_error_surprise": 13.19642958498001,
+          "std_error_surprise": 1.432642994658321,
+          "sem_error_surprise": 0.10130315765423015,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1700,
+          "freq_rank_end": 1749,
+          "avg_error_surprise": 13.408385725021363,
+          "std_error_surprise": 1.4328546761725507,
+          "sem_error_surprise": 0.10131812579764651,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1750,
+          "freq_rank_end": 1799,
+          "avg_error_surprise": 13.172249538421633,
+          "std_error_surprise": 1.4314644687431004,
+          "sem_error_surprise": 0.1012198232875845,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1800,
+          "freq_rank_end": 1849,
+          "avg_error_surprise": 12.948533047437667,
+          "std_error_surprise": 1.433203665897104,
+          "sem_error_surprise": 0.10134280309772611,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1850,
+          "freq_rank_end": 1899,
+          "avg_error_surprise": 13.693484538078307,
+          "std_error_surprise": 1.4052891668800098,
+          "sem_error_surprise": 0.09936894994288488,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1900,
+          "freq_rank_end": 1949,
+          "avg_error_surprise": 13.471847107172012,
+          "std_error_surprise": 1.5159830707625295,
+          "sem_error_surprise": 0.10719619095001903,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 1950,
+          "freq_rank_end": 1999,
+          "avg_error_surprise": 13.71560607767105,
+          "std_error_surprise": 1.4804177248233334,
+          "sem_error_surprise": 0.10468134122113393,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2000,
+          "freq_rank_end": 2049,
+          "avg_error_surprise": 13.657938077926637,
+          "std_error_surprise": 1.3826193201335075,
+          "sem_error_surprise": 0.09776594970659372,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2050,
+          "freq_rank_end": 2099,
+          "avg_error_surprise": 13.472190615415572,
+          "std_error_surprise": 1.5151919653815253,
+          "sem_error_surprise": 0.10714025135206491,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2100,
+          "freq_rank_end": 2149,
+          "avg_error_surprise": 13.321706047058106,
+          "std_error_surprise": 1.387357274798117,
+          "sem_error_surprise": 0.0981009736938237,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2150,
+          "freq_rank_end": 2199,
+          "avg_error_surprise": 12.93957740879059,
+          "std_error_surprise": 1.4835002751578166,
+          "sem_error_surprise": 0.10489931044562012,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2200,
+          "freq_rank_end": 2249,
+          "avg_error_surprise": 13.722573303461074,
+          "std_error_surprise": 1.4489073290505095,
+          "sem_error_surprise": 0.10245321976825035,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2250,
+          "freq_rank_end": 2299,
+          "avg_error_surprise": 13.370172418355942,
+          "std_error_surprise": 1.438286960930371,
+          "sem_error_surprise": 0.10170224633660563,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2300,
+          "freq_rank_end": 2349,
+          "avg_error_surprise": 13.98221416568756,
+          "std_error_surprise": 1.5043812044920608,
+          "sem_error_surprise": 0.10637581511859225,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2350,
+          "freq_rank_end": 2399,
+          "avg_error_surprise": 13.510078075408934,
+          "std_error_surprise": 1.4106983513052254,
+          "sem_error_surprise": 0.09975143704166073,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2400,
+          "freq_rank_end": 2449,
+          "avg_error_surprise": 13.910165823459625,
+          "std_error_surprise": 1.5838147522910817,
+          "sem_error_surprise": 0.11199261514883159,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2450,
+          "freq_rank_end": 2499,
+          "avg_error_surprise": 13.687752705574034,
+          "std_error_surprise": 1.4466171394181742,
+          "sem_error_surprise": 0.10229127890632761,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2500,
+          "freq_rank_end": 2549,
+          "avg_error_surprise": 13.72452675676346,
+          "std_error_surprise": 1.4988985455635249,
+          "sem_error_surprise": 0.10598813258786216,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2550,
+          "freq_rank_end": 2599,
+          "avg_error_surprise": 13.572709550380708,
+          "std_error_surprise": 1.5336166381110898,
+          "sem_error_surprise": 0.1084430724548867,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2600,
+          "freq_rank_end": 2649,
+          "avg_error_surprise": 13.456838846683501,
+          "std_error_surprise": 1.4908050456866717,
+          "sem_error_surprise": 0.10541583572321664,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2650,
+          "freq_rank_end": 2699,
+          "avg_error_surprise": 13.989673784494398,
+          "std_error_surprise": 1.5124443820250977,
+          "sem_error_surprise": 0.10694596786974438,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2700,
+          "freq_rank_end": 2749,
+          "avg_error_surprise": 13.580623479127885,
+          "std_error_surprise": 1.4129135948811185,
+          "sem_error_surprise": 0.09990807841711012,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2750,
+          "freq_rank_end": 2799,
+          "avg_error_surprise": 13.895584357738494,
+          "std_error_surprise": 1.603662633080241,
+          "sem_error_surprise": 0.11339607225865127,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2800,
+          "freq_rank_end": 2849,
+          "avg_error_surprise": 13.72465983057022,
+          "std_error_surprise": 1.4647943068801739,
+          "sem_error_surprise": 0.10357659874384197,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2850,
+          "freq_rank_end": 2899,
+          "avg_error_surprise": 13.45998039841652,
+          "std_error_surprise": 1.5122643993888218,
+          "sem_error_surprise": 0.10693324117548374,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2900,
+          "freq_rank_end": 2949,
+          "avg_error_surprise": 13.994654304504396,
+          "std_error_surprise": 1.4261990225132226,
+          "sem_error_surprise": 0.10084750001407253,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 2950,
+          "freq_rank_end": 2999,
+          "avg_error_surprise": 13.526433970451356,
+          "std_error_surprise": 1.4880955199552488,
+          "sem_error_surprise": 0.10522424332136777,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3000,
+          "freq_rank_end": 3049,
+          "avg_error_surprise": 13.934758647441862,
+          "std_error_surprise": 1.4137192909702505,
+          "sem_error_surprise": 0.0999650497339302,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3050,
+          "freq_rank_end": 3099,
+          "avg_error_surprise": 13.743522500991821,
+          "std_error_surprise": 1.4316999358144167,
+          "sem_error_surprise": 0.10123647332387188,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3100,
+          "freq_rank_end": 3149,
+          "avg_error_surprise": 13.561981817722321,
+          "std_error_surprise": 1.49772154761105,
+          "sem_error_surprise": 0.1059049062644984,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3150,
+          "freq_rank_end": 3199,
+          "avg_error_surprise": 13.700692154407502,
+          "std_error_surprise": 1.4857173665147656,
+          "sem_error_surprise": 0.105056082478921,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3200,
+          "freq_rank_end": 3249,
+          "avg_error_surprise": 14.07963249874115,
+          "std_error_surprise": 1.455234296811866,
+          "sem_error_surprise": 0.10290060394909074,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3250,
+          "freq_rank_end": 3299,
+          "avg_error_surprise": 14.042776263713836,
+          "std_error_surprise": 1.5025328537443905,
+          "sem_error_surprise": 0.10624511698382336,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3300,
+          "freq_rank_end": 3349,
+          "avg_error_surprise": 14.009445078611375,
+          "std_error_surprise": 1.5361073066784003,
+          "sem_error_surprise": 0.10861918931825004,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3350,
+          "freq_rank_end": 3399,
+          "avg_error_surprise": 14.447268938302996,
+          "std_error_surprise": 1.5536202465228832,
+          "sem_error_surprise": 0.10985754117050464,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3400,
+          "freq_rank_end": 3449,
+          "avg_error_surprise": 14.062917965412138,
+          "std_error_surprise": 1.483345309144743,
+          "sem_error_surprise": 0.10488835269375035,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3450,
+          "freq_rank_end": 3499,
+          "avg_error_surprise": 13.441981301546098,
+          "std_error_surprise": 1.4348814611731,
+          "sem_error_surprise": 0.10146144113943607,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3500,
+          "freq_rank_end": 3549,
+          "avg_error_surprise": 13.31696051979065,
+          "std_error_surprise": 1.473445589003867,
+          "sem_error_surprise": 0.10418833676940409,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3550,
+          "freq_rank_end": 3599,
+          "avg_error_surprise": 14.131940571784972,
+          "std_error_surprise": 1.5470683626950477,
+          "sem_error_surprise": 0.10939425302208373,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3600,
+          "freq_rank_end": 3649,
+          "avg_error_surprise": 13.865281034469604,
+          "std_error_surprise": 1.4318568440932657,
+          "sem_error_surprise": 0.10124756841467174,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3650,
+          "freq_rank_end": 3699,
+          "avg_error_surprise": 14.255658583641052,
+          "std_error_surprise": 1.5071394985370357,
+          "sem_error_surprise": 0.10657085596096307,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3700,
+          "freq_rank_end": 3749,
+          "avg_error_surprise": 14.284593333244324,
+          "std_error_surprise": 1.4383220870003388,
+          "sem_error_surprise": 0.10170473012483269,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3750,
+          "freq_rank_end": 3799,
+          "avg_error_surprise": 14.382066778182985,
+          "std_error_surprise": 1.464696276241089,
+          "sem_error_surprise": 0.10356966693087585,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3800,
+          "freq_rank_end": 3849,
+          "avg_error_surprise": 13.608224817037582,
+          "std_error_surprise": 1.4780195159234042,
+          "sem_error_surprise": 0.10451176224354974,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3850,
+          "freq_rank_end": 3899,
+          "avg_error_surprise": 14.14908909225464,
+          "std_error_surprise": 1.5014570227796669,
+          "sem_error_surprise": 0.1061690442467667,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3900,
+          "freq_rank_end": 3949,
+          "avg_error_surprise": 14.205545053005219,
+          "std_error_surprise": 1.528709612831783,
+          "sem_error_surprise": 0.10809609336984154,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        },
+        {
+          "freq_rank_start": 3950,
+          "freq_rank_end": 3999,
+          "avg_error_surprise": 13.827974035263061,
+          "std_error_surprise": 1.5706325051584473,
+          "sem_error_surprise": 0.11106048951495531,
+          "n_tokens_in_bin": 50,
+          "n_seqs": 200
+        }
+      ],
+      "baseline_avg": 0.3167869454342872,
+      "baseline_std": 0.5351354233866452,
+      "baseline_sem": 0.0378397886729831
+    }
+  }
+}

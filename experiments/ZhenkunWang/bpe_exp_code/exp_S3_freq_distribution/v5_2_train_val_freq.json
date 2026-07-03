@@ -1,0 +1,16 @@
+{
+  "n_train_tokens": 60551697,
+  "n_val_tokens": 1237003,
+  "tokens_in_both": 9900,
+  "spearman_rho": 0.8850679672041021,
+  "spearman_p": 0.0,
+  "pearson_r_log10": 0.9301582419077774,
+  "pearson_p": 0.0,
+  "top_k_overlap": {
+    "100": 93,
+    "500": 458,
+    "1000": 898,
+    "2000": 1721,
+    "5000": 4328
+  }
+}

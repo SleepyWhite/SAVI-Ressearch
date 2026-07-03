@@ -1,0 +1,659 @@
+{
+  "config": {
+    "vocab_size": 18782,
+    "L": 128,
+    "n_seqs": 200,
+    "n_samples_per_seq": 10,
+    "bucket_edges": [
+      0,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500,
+      4000,
+      4500,
+      5000,
+      5500,
+      6000,
+      6500,
+      7000
+    ],
+    "bucket_labels": [
+      "0-500",
+      "500-1000",
+      "1000-1500",
+      "1500-2000",
+      "2000-2500",
+      "2500-3000",
+      "3000-3500",
+      "3500-4000",
+      "4000-4500",
+      "4500-5000",
+      "5000-5500",
+      "5500-6000",
+      "6000-6500",
+      "6500-7000"
+    ]
+  },
+  "results": [
+    {
+      "bucket_idx": 0,
+      "bucket_label": "0-500",
+      "bucket_range": [
+        0,
+        500
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.7801372351406999,
+        "Word-Recall@1": 0.09200000000000001,
+        "Word-Recall@5": 0.28600000000000003,
+        "Word-Recall@1_std": 0.19630588376307012,
+        "Word-Recall@5_std": 0.2898344354972335,
+        "n_auc_pairs": 143420,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.5584172473350646,
+        "Word-Recall@1": 0.0175,
+        "Word-Recall@5": 0.10399999999999998,
+        "Word-Recall@1_std": 0.12626856299174388,
+        "Word-Recall@5_std": 0.25977682729604656,
+        "n_auc_pairs": 143135,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.7440537150049704,
+        "Word-Recall@1": 0.083,
+        "Word-Recall@5": 0.22805555555555557,
+        "Word-Recall@1_std": 0.2047217623996042,
+        "Word-Recall@5_std": 0.3162315480392629,
+        "n_auc_pairs": 144571,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 1,
+      "bucket_label": "500-1000",
+      "bucket_range": [
+        500,
+        1000
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.8581607685244049,
+        "Word-Recall@1": 0.14800000000000002,
+        "Word-Recall@5": 0.423,
+        "Word-Recall@1_std": 0.267761087538873,
+        "Word-Recall@5_std": 0.3337229389778293,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.5897375150102423,
+        "Word-Recall@1": 0.0085,
+        "Word-Recall@5": 0.081,
+        "Word-Recall@1_std": 0.08589382981332246,
+        "Word-Recall@5_std": 0.25541926317331676,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.8134676619663106,
+        "Word-Recall@1": 0.113,
+        "Word-Recall@5": 0.3275,
+        "Word-Recall@1_std": 0.21031167347534468,
+        "Word-Recall@5_std": 0.3136777805328264,
+        "n_auc_pairs": 144823,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 2,
+      "bucket_label": "1000-1500",
+      "bucket_range": [
+        1000,
+        1500
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.871314579360034,
+        "Word-Recall@1": 0.15650000000000003,
+        "Word-Recall@5": 0.43799999999999994,
+        "Word-Recall@1_std": 0.25447544085824864,
+        "Word-Recall@5_std": 0.31009030942614124,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.6198566786748605,
+        "Word-Recall@1": 0.01,
+        "Word-Recall@5": 0.098,
+        "Word-Recall@1_std": 0.09949874371066199,
+        "Word-Recall@5_std": 0.27348857380153924,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.8560206641937289,
+        "Word-Recall@1": 0.15350000000000003,
+        "Word-Recall@5": 0.405,
+        "Word-Recall@1_std": 0.25531891821798086,
+        "Word-Recall@5_std": 0.32981055168080964,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 3,
+      "bucket_label": "1500-2000",
+      "bucket_range": [
+        1500,
+        2000
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.8950529420074875,
+        "Word-Recall@1": 0.20800000000000005,
+        "Word-Recall@5": 0.5385,
+        "Word-Recall@1_std": 0.2789910392826264,
+        "Word-Recall@5_std": 0.3123583679045593,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.60840589461044,
+        "Word-Recall@1": 0.009500000000000001,
+        "Word-Recall@5": 0.11599999999999999,
+        "Word-Recall@1_std": 0.09033133454123211,
+        "Word-Recall@5_std": 0.2985699248082432,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.8730490096584546,
+        "Word-Recall@1": 0.1855,
+        "Word-Recall@5": 0.466,
+        "Word-Recall@1_std": 0.25795299959488743,
+        "Word-Recall@5_std": 0.3214716161654089,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 4,
+      "bucket_label": "2000-2500",
+      "bucket_range": [
+        2000,
+        2500
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.899600197782016,
+        "Word-Recall@1": 0.20700000000000002,
+        "Word-Recall@5": 0.5475,
+        "Word-Recall@1_std": 0.2713871772947278,
+        "Word-Recall@5_std": 0.30918238953730853,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.6137339867632967,
+        "Word-Recall@1": 0.026000000000000002,
+        "Word-Recall@5": 0.1185,
+        "Word-Recall@1_std": 0.1566014048468276,
+        "Word-Recall@5_std": 0.31130009637004613,
+        "n_auc_pairs": 143512,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.8784618211086229,
+        "Word-Recall@1": 0.2075,
+        "Word-Recall@5": 0.4709999999999999,
+        "Word-Recall@1_std": 0.26475224267227654,
+        "Word-Recall@5_std": 0.30093022447072343,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 5,
+      "bucket_label": "2500-3000",
+      "bucket_range": [
+        2500,
+        3000
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9153468955287137,
+        "Word-Recall@1": 0.24300000000000005,
+        "Word-Recall@5": 0.6164999999999999,
+        "Word-Recall@1_std": 0.2931740097621206,
+        "Word-Recall@5_std": 0.29475031806598617,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.6352997691413536,
+        "Word-Recall@1": 0.0235,
+        "Word-Recall@5": 0.1445,
+        "Word-Recall@1_std": 0.14730156143096382,
+        "Word-Recall@5_std": 0.33387085826708507,
+        "n_auc_pairs": 143492,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.8974190579507278,
+        "Word-Recall@1": 0.23549999999999996,
+        "Word-Recall@5": 0.5485,
+        "Word-Recall@1_std": 0.267749416432604,
+        "Word-Recall@5_std": 0.29865992365900046,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 6,
+      "bucket_label": "3000-3500",
+      "bucket_range": [
+        3000,
+        3500
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9153100409691318,
+        "Word-Recall@1": 0.2445,
+        "Word-Recall@5": 0.602,
+        "Word-Recall@1_std": 0.29252307601281646,
+        "Word-Recall@5_std": 0.2961351043020736,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.6118375715193897,
+        "Word-Recall@1": 0.014499999999999999,
+        "Word-Recall@5": 0.1295,
+        "Word-Recall@1_std": 0.11764246682214718,
+        "Word-Recall@5_std": 0.3229237526104266,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.8928828037513998,
+        "Word-Recall@1": 0.23850000000000002,
+        "Word-Recall@5": 0.5265,
+        "Word-Recall@1_std": 0.2894265882741252,
+        "Word-Recall@5_std": 0.297737720149799,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 7,
+      "bucket_label": "3500-4000",
+      "bucket_range": [
+        3500,
+        4000
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9218093346047892,
+        "Word-Recall@1": 0.24100000000000002,
+        "Word-Recall@5": 0.6265000000000001,
+        "Word-Recall@1_std": 0.28516486459590357,
+        "Word-Recall@5_std": 0.27431323336652935,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.588509076781804,
+        "Word-Recall@1": 0.019,
+        "Word-Recall@5": 0.1,
+        "Word-Recall@1_std": 0.12899224782908464,
+        "Word-Recall@5_std": 0.2879236009777594,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.9133543882978723,
+        "Word-Recall@1": 0.265,
+        "Word-Recall@5": 0.5920000000000001,
+        "Word-Recall@1_std": 0.27271780286589287,
+        "Word-Recall@5_std": 0.27483813418083014,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 8,
+      "bucket_label": "4000-4500",
+      "bucket_range": [
+        4000,
+        4500
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9247855654446564,
+        "Word-Recall@1": 0.275,
+        "Word-Recall@5": 0.653,
+        "Word-Recall@1_std": 0.3007906248539007,
+        "Word-Recall@5_std": 0.27980528944249783,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.5902738751147842,
+        "Word-Recall@1": 0.0195,
+        "Word-Recall@5": 0.0685,
+        "Word-Recall@1_std": 0.13663729359146423,
+        "Word-Recall@5_std": 0.24363445979581788,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.9101407124860024,
+        "Word-Recall@1": 0.2705,
+        "Word-Recall@5": 0.555,
+        "Word-Recall@1_std": 0.282806912928238,
+        "Word-Recall@5_std": 0.27124711980037686,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 9,
+      "bucket_label": "4500-5000",
+      "bucket_range": [
+        4500,
+        5000
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9326405841633116,
+        "Word-Recall@1": 0.317,
+        "Word-Recall@5": 0.6865000000000001,
+        "Word-Recall@1_std": 0.3195481184422778,
+        "Word-Recall@5_std": 0.2732540027154223,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.6098691879044852,
+        "Word-Recall@1": 0.019500000000000003,
+        "Word-Recall@5": 0.1255,
+        "Word-Recall@1_std": 0.12794432382876544,
+        "Word-Recall@5_std": 0.31890398241477014,
+        "n_auc_pairs": 143517,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.9125303401455769,
+        "Word-Recall@1": 0.28,
+        "Word-Recall@5": 0.574,
+        "Word-Recall@1_std": 0.29154759474226505,
+        "Word-Recall@5_std": 0.2914172266699414,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 10,
+      "bucket_label": "5000-5500",
+      "bucket_range": [
+        5000,
+        5500
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9350991558946106,
+        "Word-Recall@1": 0.311,
+        "Word-Recall@5": 0.713,
+        "Word-Recall@1_std": 0.3041036007678962,
+        "Word-Recall@5_std": 0.24805442951094422,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.6232318640955005,
+        "Word-Recall@1": 0.0225,
+        "Word-Recall@5": 0.10300000000000001,
+        "Word-Recall@1_std": 0.14122234242498602,
+        "Word-Recall@5_std": 0.28703832496724196,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.9181732922732364,
+        "Word-Recall@1": 0.297,
+        "Word-Recall@5": 0.5954999999999999,
+        "Word-Recall@1_std": 0.2988159968944099,
+        "Word-Recall@5_std": 0.26632639748999726,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 11,
+      "bucket_label": "5500-6000",
+      "bucket_range": [
+        5500,
+        6000
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9366090626545173,
+        "Word-Recall@1": 0.295,
+        "Word-Recall@5": 0.691,
+        "Word-Recall@1_std": 0.28892040426387333,
+        "Word-Recall@5_std": 0.2681771802372454,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.6111901532810624,
+        "Word-Recall@1": 0.0105,
+        "Word-Recall@5": 0.1125,
+        "Word-Recall@1_std": 0.09969829487007287,
+        "Word-Recall@5_std": 0.3033047147671793,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.9215476098824189,
+        "Word-Recall@1": 0.3025,
+        "Word-Recall@5": 0.6250000000000001,
+        "Word-Recall@1_std": 0.2836260742597549,
+        "Word-Recall@5_std": 0.258408591188451,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 12,
+      "bucket_label": "6000-6500",
+      "bucket_range": [
+        6000,
+        6500
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9362274316592497,
+        "Word-Recall@1": 0.3195,
+        "Word-Recall@5": 0.6970000000000001,
+        "Word-Recall@1_std": 0.30881993135158875,
+        "Word-Recall@5_std": 0.2632318369802559,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.5874970332697605,
+        "Word-Recall@1": 0.0055000000000000005,
+        "Word-Recall@5": 0.09050000000000001,
+        "Word-Recall@1_std": 0.07085019407171728,
+        "Word-Recall@5_std": 0.27669432592664417,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.917016832306831,
+        "Word-Recall@1": 0.30550000000000005,
+        "Word-Recall@5": 0.595,
+        "Word-Recall@1_std": 0.2805704011473769,
+        "Word-Recall@5_std": 0.268467875173176,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    },
+    {
+      "bucket_idx": 13,
+      "bucket_label": "6500-7000",
+      "bucket_range": [
+        6500,
+        7000
+      ],
+      "D1_fwd": {
+        "Word-AUC": 0.9369928304019214,
+        "Word-Recall@1": 0.309,
+        "Word-Recall@5": 0.6945,
+        "Word-Recall@1_std": 0.29852805563296725,
+        "Word-Recall@5_std": 0.2551857166849273,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D2_tokflip": {
+        "Word-AUC": 0.5934152186197641,
+        "Word-Recall@1": 0.005,
+        "Word-Recall@5": 0.0695,
+        "Word-Recall@1_std": 0.07053367989832944,
+        "Word-Recall@5_std": 0.24519329109908372,
+        "n_auc_pairs": 143570,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      },
+      "D3_backrule": {
+        "Word-AUC": 0.9255856837905935,
+        "Word-Recall@1": 0.31549999999999995,
+        "Word-Recall@5": 0.6430000000000001,
+        "Word-Recall@1_std": 0.28356612985333773,
+        "Word-Recall@5_std": 0.26086586591579974,
+        "n_auc_pairs": 144880,
+        "n_seqs": 200,
+        "n_valid": 200,
+        "n_skipped": 0,
+        "n_samples_per_seq": 10
+      }
+    }
+  ]
+}
