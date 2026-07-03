@@ -11,7 +11,7 @@ bpe_exp_code/
 ├── train_union_lm.py                  # 训练前向/后向语言模型
 ├── decode_wiki_to_text.py             # GPT-2 token 解码为原始文本
 ├── exp_token_level_S1_S2_S4/          # §3 Token级检错 + S1生成文本 + S2扩展Recall + S4 Surprise-频率
-├── exp_word_level/                    # §4 Word级检错 (D1-D4)
+├── exp_word_level/                    # §4 Word级检错 (D1-D3)
 ├── exp_S3_freq_gradient/              # S3 频率梯度检错
 ├── exp_S3_freq_distribution/          # S3 前提：训练/测试词频分布一致性
 ├── exp_S5_20k_vocab/                  # S5 20k词表验证
