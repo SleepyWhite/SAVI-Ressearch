@@ -1,0 +1,765 @@
+{
+  "stage": "g0",
+  "config": {
+    "stage": "g0",
+    "base_seed": 20260705,
+    "seed2_base": 20260706,
+    "smoke": false,
+    "limit": null,
+    "shard": null,
+    "models": {
+      "main": "Qwen/Qwen3-4B",
+      "ladder": [
+        "Qwen/Qwen2.5-0.5B-Instruct",
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        "Qwen/Qwen2.5-3B-Instruct",
+        "Qwen/Qwen2.5-7B-Instruct",
+        "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+      ]
+    },
+    "prompt_template_sha256": "b89c6ed34472ac3f0574fb9a3d654f4c8bea0ca66090135c557f80a72ba42e14",
+    "facts_template_sha256": "e58e08f35886af3e8548bef911906eec01e1e2e11f8d5072db6476cf9be397a2",
+    "facts_preamble_sha256": "4f63e73c6b556eb579b95ca54f8085beec651901dc5114347c50c61359d84a42",
+    "prereg": {
+      "a0_rung": 32,
+      "triage_parse_rate_min": 0.8,
+      "triage_sc_acc_margin_over_chance": 0.05,
+      "triage_sc_acc_max": 0.9,
+      "triage_sticky_density_min": 0.08,
+      "triage_top2_budget_gpuh_max": 25.0,
+      "a1_escalation_rung": 256,
+      "a1_deepen_rungs": [
+        512,
+        1024
+      ],
+      "a2_stats_rung": 1024,
+      "a2_facts_rung": 8,
+      "a2_ladder_rung": 32,
+      "a2_seed_rung": 64,
+      "ladder_sample_cap": 60,
+      "subsample_base_seed": 20260705,
+      "certify_greenlight_min": 20,
+      "certify_user_decision_min": 8
+    },
+    "data_sha256": {
+      "murder_mystery": "b2c2776a0b530ed2be72bd5193fe042933540ce3cf2d65636d9e547add84cdbf",
+      "object_placements": "01add72d136cdb1dbb0035bfe0ee1a1a264affdf609fc6cd21f2236984bee50d",
+      "team_allocation": "f6de8b2fc05cc4819262207c265e28dac6a29eccb8648835381a022367faf4e1"
+    },
+    "generation": {
+      "temperature": 1.0,
+      "max_new_tokens": 2048,
+      "top_p": 1.0,
+      "top_k": 0,
+      "attn_implementation": "sdpa"
+    },
+    "budgets": {
+      "a0_rung": 32,
+      "a1_top": 256,
+      "a1_deepen": [
+        512,
+        1024
+      ],
+      "a2_facts": 8,
+      "a2_ladder": 32,
+      "a2_seed": 64
+    },
+    "phase": "G",
+    "prereg_g": {
+      "freeze_seed": 20260707,
+      "ga_pass_min": 0.5,
+      "ga_kill_below": 0.3,
+      "ga_min_distinct_states": 3,
+      "ga_chain_filter": "any_states",
+      "ga_layer_range": "1..T-1",
+      "ga_conditioning": "all_sprev_groups",
+      "ga_modal_tie": "smallest_canon",
+      "ga_evidence_pools": {
+        "patient": {
+          "seed_tag": "b1_patient",
+          "id_source": "results_b1.sticky_ids",
+          "n_items": 19,
+          "n_per_item": 256
+        },
+        "tuning": {
+          "seed_tag": "b1_tuning",
+          "id_source": "phase_b_split tuning (deferred)",
+          "n_items": 40,
+          "n_per_item": 256
+        }
+      },
+      "ga_excluded_pools": [
+        "b1_train",
+        "b1_calib"
+      ],
+      "normalization_main": "lse",
+      "gsd_template_sha256": "fccd448b715ccd781bae624dd2109eb322fe42fd8494543924c4570dbb21a74a",
+      "sensitivity_template_sha256": "42edbc932e92eaeb0ef8ac6cbf39c2da80b110cf562c94affc346ed8d5821b38",
+      "gsd_root_template_sha256": "80c48de4e1d1b92e67ed7930249e4deef18282c80c5886ac2f29208400a0330f",
+      "phaseB_G1_baseline": 3,
+      "readout_lines": {
+        "1_delta_ledger": "descriptive",
+        "2_oracle_online_fixed_pass_gt": 3,
+        "3_zero_cov_fixed_exist_min": 1,
+        "4_lambda0_sc_agreement_min": 0.8,
+        "5_ablation_baseline": 3,
+        "6_knowledge_control_flag_gt": 1
+      },
+      "patient_sticky_n": 19,
+      "primary_nonzero_n": 15,
+      "zero_coverage_ids": [
+        "object_placements-0014-q0",
+        "object_placements-0021-q0",
+        "object_placements-0042-q0",
+        "object_placements-0055-q3"
+      ],
+      "knowledge_control_ids": [
+        "object_placements-0020-q1",
+        "object_placements-0034-q3",
+        "object_placements-0035-q0"
+      ],
+      "deepdive_ids": {
+        "nonzero": "object_placements-0018-q0",
+        "zero_cov": "object_placements-0055-q3",
+        "knowledge": "object_placements-0034-q3"
+      }
+    },
+    "gsd_template_sha256": "fccd448b715ccd781bae624dd2109eb322fe42fd8494543924c4570dbb21a74a",
+    "sensitivity_template_sha256": "42edbc932e92eaeb0ef8ac6cbf39c2da80b110cf562c94affc346ed8d5821b38",
+    "gsd_root_template_sha256": "80c48de4e1d1b92e67ed7930249e4deef18282c80c5886ac2f29208400a0330f",
+    "gsd_batch": 8,
+    "normalization_main": "lse",
+    "pools": {
+      "ga_evidence": {
+        "patient": {
+          "seed_tag": "b1_patient",
+          "id_source": "results_b1.sticky_ids",
+          "n_items": 19,
+          "n_per_item": 256
+        },
+        "tuning": {
+          "seed_tag": "b1_tuning",
+          "id_source": "phase_b_split tuning (deferred)",
+          "n_items": 40,
+          "n_per_item": 256
+        }
+      },
+      "ablation": "results_b1.sticky_ids @ seed_tag b1_patient (N=256)",
+      "sc_readout": "cache_b1 patient chains, vote_at_rung @ N=256"
+    }
+  },
+  "scope": {
+    "ga_patient_ids": [
+      "object_placements-0000-q2",
+      "object_placements-0003-q3",
+      "object_placements-0006-q2",
+      "object_placements-0006-q3",
+      "object_placements-0011-q2",
+      "object_placements-0013-q1",
+      "object_placements-0014-q0",
+      "object_placements-0018-q0",
+      "object_placements-0021-q0",
+      "object_placements-0032-q0",
+      "object_placements-0042-q0",
+      "object_placements-0042-q1",
+      "object_placements-0043-q2",
+      "object_placements-0045-q0",
+      "object_placements-0046-q0",
+      "object_placements-0047-q2",
+      "object_placements-0050-q1",
+      "object_placements-0051-q2",
+      "object_placements-0055-q3"
+    ],
+    "ga_tuning_ids": [
+      "object_placements-0015-q0",
+      "object_placements-0015-q1",
+      "object_placements-0015-q2",
+      "object_placements-0015-q3",
+      "object_placements-0016-q0",
+      "object_placements-0016-q1",
+      "object_placements-0016-q2",
+      "object_placements-0016-q3",
+      "object_placements-0019-q0",
+      "object_placements-0019-q1",
+      "object_placements-0019-q2",
+      "object_placements-0019-q3",
+      "object_placements-0024-q0",
+      "object_placements-0024-q1",
+      "object_placements-0024-q2",
+      "object_placements-0024-q3",
+      "object_placements-0025-q0",
+      "object_placements-0025-q1",
+      "object_placements-0025-q2",
+      "object_placements-0025-q3",
+      "object_placements-0029-q0",
+      "object_placements-0029-q1",
+      "object_placements-0029-q2",
+      "object_placements-0029-q3",
+      "object_placements-0031-q0",
+      "object_placements-0031-q1",
+      "object_placements-0031-q2",
+      "object_placements-0031-q3",
+      "object_placements-0033-q0",
+      "object_placements-0033-q1",
+      "object_placements-0033-q2",
+      "object_placements-0033-q3",
+      "object_placements-0044-q0",
+      "object_placements-0044-q1",
+      "object_placements-0044-q2",
+      "object_placements-0044-q3",
+      "object_placements-0053-q0",
+      "object_placements-0053-q1",
+      "object_placements-0053-q2",
+      "object_placements-0053-q3"
+    ],
+    "ablation_ids": [
+      "object_placements-0000-q2",
+      "object_placements-0003-q3",
+      "object_placements-0006-q2",
+      "object_placements-0006-q3",
+      "object_placements-0011-q2",
+      "object_placements-0013-q1",
+      "object_placements-0014-q0",
+      "object_placements-0018-q0",
+      "object_placements-0021-q0",
+      "object_placements-0032-q0",
+      "object_placements-0042-q0",
+      "object_placements-0042-q1",
+      "object_placements-0043-q2",
+      "object_placements-0045-q0",
+      "object_placements-0046-q0",
+      "object_placements-0047-q2",
+      "object_placements-0050-q1",
+      "object_placements-0051-q2",
+      "object_placements-0055-q3"
+    ]
+  },
+  "ga": {
+    "median_rho": 0.4,
+    "n_groups_counted": 35,
+    "per_group": [
+      {
+        "item_id": "object_placements-0003-q3",
+        "t": 1,
+        "sprev_sha8": "2c126b0e",
+        "rho": 0.0,
+        "n_states": 7,
+        "n_chains": 102,
+        "is_modal_prev": true,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0003-q3",
+        "t": 1,
+        "sprev_sha8": "d8468222",
+        "rho": -0.8660254037844387,
+        "n_states": 3,
+        "n_chains": 4,
+        "is_modal_prev": false,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0003-q3",
+        "t": 2,
+        "sprev_sha8": "2c126b0e",
+        "rho": 0.4,
+        "n_states": 4,
+        "n_chains": 35,
+        "is_modal_prev": false,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0042-q0",
+        "t": 3,
+        "sprev_sha8": "64666b36",
+        "rho": 0.8660254037844387,
+        "n_states": 3,
+        "n_chains": 80,
+        "is_modal_prev": false,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0042-q1",
+        "t": 1,
+        "sprev_sha8": "25acebd4",
+        "rho": 0.5161002296110788,
+        "n_states": 6,
+        "n_chains": 72,
+        "is_modal_prev": false,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0042-q1",
+        "t": 3,
+        "sprev_sha8": "3ecbbf34",
+        "rho": 0.8660254037844387,
+        "n_states": 3,
+        "n_chains": 15,
+        "is_modal_prev": false,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0042-q1",
+        "t": 3,
+        "sprev_sha8": "64666b36",
+        "rho": 1.0,
+        "n_states": 3,
+        "n_chains": 112,
+        "is_modal_prev": true,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0047-q2",
+        "t": 3,
+        "sprev_sha8": "7c8ac9fe",
+        "rho": 0.5,
+        "n_states": 3,
+        "n_chains": 250,
+        "is_modal_prev": true,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0051-q2",
+        "t": 3,
+        "sprev_sha8": "f36fa25e",
+        "rho": 0.5,
+        "n_states": 3,
+        "n_chains": 183,
+        "is_modal_prev": true,
+        "pool": "patient"
+      },
+      {
+        "item_id": "object_placements-0015-q1",
+        "t": 1,
+        "sprev_sha8": "682106a9",
+        "rho": 1.0,
+        "n_states": 3,
+        "n_chains": 18,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0015-q2",
+        "t": 1,
+        "sprev_sha8": "682106a9",
+        "rho": -0.20519567041703082,
+        "n_states": 5,
+        "n_chains": 92,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0015-q3",
+        "t": 1,
+        "sprev_sha8": "682106a9",
+        "rho": 0.5,
+        "n_states": 3,
+        "n_chains": 102,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0015-q3",
+        "t": 3,
+        "sprev_sha8": "682106a9",
+        "rho": -0.5,
+        "n_states": 3,
+        "n_chains": 44,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q1",
+        "t": 1,
+        "sprev_sha8": "7246ac17",
+        "rho": -1.0,
+        "n_states": 3,
+        "n_chains": 218,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q1",
+        "t": 1,
+        "sprev_sha8": "2f3fba5b",
+        "rho": 0.8660254037844387,
+        "n_states": 3,
+        "n_chains": 4,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q1",
+        "t": 1,
+        "sprev_sha8": "041a6d43",
+        "rho": 0.0,
+        "n_states": 3,
+        "n_chains": 11,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q2",
+        "t": 1,
+        "sprev_sha8": "cece1095",
+        "rho": 0.0,
+        "n_states": 3,
+        "n_chains": 5,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q2",
+        "t": 1,
+        "sprev_sha8": "934392de",
+        "rho": 0.5,
+        "n_states": 3,
+        "n_chains": 11,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q2",
+        "t": 1,
+        "sprev_sha8": "6a73268e",
+        "rho": 0.0,
+        "n_states": 4,
+        "n_chains": 120,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q2",
+        "t": 1,
+        "sprev_sha8": "628fb45d",
+        "rho": -0.5,
+        "n_states": 3,
+        "n_chains": 18,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q2",
+        "t": 2,
+        "sprev_sha8": "fce11328",
+        "rho": -0.5,
+        "n_states": 3,
+        "n_chains": 53,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q3",
+        "t": 1,
+        "sprev_sha8": "5dc8b0ba",
+        "rho": -0.8660254037844387,
+        "n_states": 3,
+        "n_chains": 7,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q3",
+        "t": 1,
+        "sprev_sha8": "cece1095",
+        "rho": -0.31622776601683794,
+        "n_states": 4,
+        "n_chains": 99,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0016-q3",
+        "t": 1,
+        "sprev_sha8": "6a73268e",
+        "rho": -0.31622776601683794,
+        "n_states": 4,
+        "n_chains": 75,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0019-q3",
+        "t": 2,
+        "sprev_sha8": "2fe86aa2",
+        "rho": 0.09107651110783745,
+        "n_states": 6,
+        "n_chains": 256,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0019-q3",
+        "t": 3,
+        "sprev_sha8": "2fe86aa2",
+        "rho": 0.5,
+        "n_states": 3,
+        "n_chains": 170,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0024-q0",
+        "t": 1,
+        "sprev_sha8": "90168bbe",
+        "rho": -1.0,
+        "n_states": 3,
+        "n_chains": 255,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0024-q2",
+        "t": 3,
+        "sprev_sha8": "282e9b4c",
+        "rho": -0.5,
+        "n_states": 3,
+        "n_chains": 253,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0031-q0",
+        "t": 1,
+        "sprev_sha8": "4f184629",
+        "rho": 0.6982532518267537,
+        "n_states": 6,
+        "n_chains": 225,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0044-q1",
+        "t": 3,
+        "sprev_sha8": "80e41c68",
+        "rho": 1.0,
+        "n_states": 3,
+        "n_chains": 233,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0053-q0",
+        "t": 1,
+        "sprev_sha8": "db988ebe",
+        "rho": 0.7745966692414834,
+        "n_states": 4,
+        "n_chains": 5,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0053-q1",
+        "t": 1,
+        "sprev_sha8": "db988ebe",
+        "rho": 0.8660254037844387,
+        "n_states": 3,
+        "n_chains": 75,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0053-q3",
+        "t": 1,
+        "sprev_sha8": "e3e27fb1",
+        "rho": 1.0,
+        "n_states": 3,
+        "n_chains": 141,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0053-q3",
+        "t": 3,
+        "sprev_sha8": "cffd82db",
+        "rho": -0.9486832980505138,
+        "n_states": 4,
+        "n_chains": 102,
+        "is_modal_prev": false,
+        "pool": "tuning"
+      },
+      {
+        "item_id": "object_placements-0053-q3",
+        "t": 3,
+        "sprev_sha8": "e3e27fb1",
+        "rho": 1.0,
+        "n_states": 3,
+        "n_chains": 114,
+        "is_modal_prev": true,
+        "pool": "tuning"
+      }
+    ],
+    "verdict": "flag_continue",
+    "diag": {
+      "n_groups_seen": 1496,
+      "n_groups_lt_min_distinct": 1460,
+      "n_groups_degenerate": 1,
+      "items_skipped_no_space": [],
+      "items_oom_skipped": [],
+      "n_groups_counted_by_pool": {
+        "patient": 9,
+        "tuning": 26
+      },
+      "median_rho_modal_prev": 0.2955382555539187
+    }
+  },
+  "ablation": {
+    "per_item": [
+      {
+        "item_id": "object_placements-0000-q2",
+        "vote_fixed": true,
+        "mech_fixed": true,
+        "vote_answer_idx": 2,
+        "mech_answer_idx": 2
+      },
+      {
+        "item_id": "object_placements-0003-q3",
+        "vote_fixed": true,
+        "mech_fixed": false,
+        "vote_answer_idx": 1,
+        "mech_answer_idx": null
+      },
+      {
+        "item_id": "object_placements-0006-q2",
+        "vote_fixed": false,
+        "mech_fixed": true,
+        "vote_answer_idx": 3,
+        "mech_answer_idx": 0
+      },
+      {
+        "item_id": "object_placements-0006-q3",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 2,
+        "mech_answer_idx": 2
+      },
+      {
+        "item_id": "object_placements-0011-q2",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 2,
+        "mech_answer_idx": 2
+      },
+      {
+        "item_id": "object_placements-0013-q1",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 1,
+        "mech_answer_idx": 1
+      },
+      {
+        "item_id": "object_placements-0014-q0",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 2,
+        "mech_answer_idx": 2
+      },
+      {
+        "item_id": "object_placements-0018-q0",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 3,
+        "mech_answer_idx": 3
+      },
+      {
+        "item_id": "object_placements-0021-q0",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 0,
+        "mech_answer_idx": 1
+      },
+      {
+        "item_id": "object_placements-0032-q0",
+        "vote_fixed": true,
+        "mech_fixed": true,
+        "vote_answer_idx": 1,
+        "mech_answer_idx": 1
+      },
+      {
+        "item_id": "object_placements-0042-q0",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": null,
+        "mech_answer_idx": null
+      },
+      {
+        "item_id": "object_placements-0042-q1",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": null,
+        "mech_answer_idx": null
+      },
+      {
+        "item_id": "object_placements-0043-q2",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 0,
+        "mech_answer_idx": 0
+      },
+      {
+        "item_id": "object_placements-0045-q0",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 2,
+        "mech_answer_idx": 2
+      },
+      {
+        "item_id": "object_placements-0046-q0",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 0,
+        "mech_answer_idx": 0
+      },
+      {
+        "item_id": "object_placements-0047-q2",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 2,
+        "mech_answer_idx": 2
+      },
+      {
+        "item_id": "object_placements-0050-q1",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 2,
+        "mech_answer_idx": 2
+      },
+      {
+        "item_id": "object_placements-0051-q2",
+        "vote_fixed": false,
+        "mech_fixed": true,
+        "vote_answer_idx": 2,
+        "mech_answer_idx": 0
+      },
+      {
+        "item_id": "object_placements-0055-q3",
+        "vote_fixed": false,
+        "mech_fixed": false,
+        "vote_answer_idx": 1,
+        "mech_answer_idx": 1
+      }
+    ],
+    "vote_total": 3,
+    "mech_total": 4,
+    "phaseB_G1_baseline": 3,
+    "mech_minus_baseline": 1
+  },
+  "excluded_items": [],
+  "efficiency": {
+    "n_items": 59,
+    "generation": {
+      "gpu_seconds": 0.0,
+      "gpu_hours": 0.0,
+      "n_samples_generated": 0
+    },
+    "scoring": {
+      "gpu_seconds": 11.72389006614685,
+      "gpu_hours": 0.003256636129485236,
+      "n_scored": 129
+    },
+    "total_gpu_hours": 0.003256636129485236
+  },
+  "run_stats": {
+    "score_seconds": 11.72389006614685
+  }
+}
